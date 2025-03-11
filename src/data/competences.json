@@ -1,0 +1,266 @@
+{
+  "techniques": {
+    "docker": {
+      "logo": "/images/docker.png",
+      "title": "Docker",
+      "presentation": [
+        "Docker est une plateforme open-source qui permet de développer, expédier et exécuter des applications à l'aide de conteneurs. Ces derniers encapsulent une application et toutes ses dépendances, garantissant ainsi qu'elle fonctionne de manière identique, quel que soit l'environnement d'exécution. Docker est devenu un outil incontournable pour les développeurs et les équipes DevOps, car il simplifie la gestion des environnements, améliore la portabilité des applications et accélère les cycles de déploiement."
+      ],
+      "utilisations": [
+        "J'ai largement utilisé Docker dans plusieurs projets professionnels pour optimiser le développement et le déploiement d'applications. Par exemple, dans le cadre du projet Vidibio, j'ai dockerisé différentes APIs Python et Python FastAPI pour faciliter leur déploiement. L'utilisation de Docker a permis d'uniformiser les environnements, réduisant ainsi les erreurs dues aux configurations locales.",
+        "Dans le projet Theseus-AI, Docker a également été au centre de l'architecture. J'ai utilisé des conteneurs pour exécuter les différentes APIs et Docker Compose pour les connecter sur un même réseau. Cela a permis de créer un environnement de développement identique à celui du serveur de production, facilitant le travail sur les bots Puppeteer et garantissant une transition fluide vers la mise en production."
+      ],
+      "maitrise": [
+        "Je situe mon niveau de compétence en Docker à 'confirmé'. Au cours de mes expériences précédentes, j'ai mis un effort particulier à comprendre en profondeur le fonctionnement de Docker, ce qui m'a permis de maîtriser cette technologie. Grâce à cela, je suis aujourd'hui entièrement autonome dans son utilisation, que ce soit pour créer des images Docker, gérer des conteneurs ou orchestrer plusieurs services avec Docker Compose. Ces compétences m'ont permis de gagner en efficacité et en fiabilité dans la gestion des environnements de développement et de production."
+      ],
+      "formation": [
+        "Je me forme et m'informe continuellement sur Docker, car il y a toujours de nouvelles configurations à découvrir et des cas d'usage à explorer. Que ce soit pour optimiser la création d'images, mieux gérer les volumes et les réseaux, ou intégrer Docker avec Kubernetes pour l'orchestration, j'aime approfondir mes compétences et rester à jour. Cela complète mes connaissances actuelles et me prépare à gérer des environnements toujours plus diversifiés et complexes."
+      ],
+      "conseils": [
+        "Pour bien démarrer avec Docker, je pense qu'il est important de l'utiliser d'abord sur des applications simples, qui ne nécessitent pas trop de configuration. Cela permet de comprendre comment Docker fonctionne sans être submergé par la complexité. Ensuite, une fois que les bases sont solides, on peut travailler sur des applications plus complexes utilisant des technologies comme Docker Compose, et même explorer des outils avancés comme Kubernetes. Ce cheminement progressif aide à bien maîtriser Docker et à voir tout son potentiel dans des environnements modernes et distribués."
+      ],
+      "projet": [
+        "Docker est une technologie que j'apprécie particulièrement, car elle m'a permis de résoudre des problèmes récurrents liés aux différences de fonctionnement entre les environnements locaux et les serveurs. Grâce à Docker, j'ai pu éviter ces écarts et simplifier grandement le déploiement des applications. Pour moi, c'est une technologie essentielle que j'insisterai toujours à utiliser dans mes futurs projets, qu'ils soient personnels ou professionnels.",
+        "Aujourd'hui, je ne peux plus m'en passer pour le développement, car elle rend les processus beaucoup plus fluides et fiables. Mon objectif est de continuer à utiliser Docker pour concevoir des systèmes modulaires et fiables, tout en approfondissant mes connaissances sur son intégration avec d'autres outils comme Kubernetes. Cela me permettra de proposer des solutions toujours plus robustes et adaptées aux besoins modernes."
+      ],
+      "importance": [
+        "Pour moi, Docker est une compétence essentielle dans le développement logiciel. Il offre une flexibilité incomparable pour créer des environnements reproductibles, simplifiant le développement, les tests et les déploiements. Que ce soit pour dockeriser des APIs Python comme dans Vidibio ou pour connecter plusieurs services avec Docker Compose comme dans Theseus-AI, Docker m'a permis de gagner du temps et d'améliorer la qualité des livrables. C'est un outil incontournable pour les systèmes modernes et distribués."
+      ]
+    },
+    "git": {
+      "logo": "/images/git.png",
+      "title": "Git",
+      "presentation": [
+        "Git est un système de contrôle de version distribué largement utilisé pour suivre les modifications de fichiers dans le développement de logiciels. Il a été créé par Linus Torvalds en 2005 pour gérer le développement du noyau Linux. Git permet à plusieurs développeurs de collaborer sur des projets, de fusionner des modifications et de suivre l'historique des versions.",
+        "Grâce à son modèle distribué, chaque développeur possède une copie complète du dépôt, ce qui améliore la résilience et la flexibilité du développement. Git offre également des fonctionnalités comme les branches, les fusions et les remises, qui facilitent la gestion des différentes versions du code."
+      ],
+      "utilisations": [
+        "J'ai commencé à utiliser Git dès mes premiers projets professionnels pour assurer le suivi des modifications et faciliter la collaboration en équipe. Lors du projet Gava, Git a été essentiel pour gérer les différentes fonctionnalités en parallèle grâce aux branches. Dans le cadre de Vidibio, j'ai utilisé Git pour synchroniser les développements avec l'équipe backend, tout en assurant une intégration continue grâce à des pipelines automatisés. Enfin, pour Theseus-AI, j'ai contribué à la mise en place de workflows Git avancés pour gérer les versions, les revues de code et les déploiements sur différentes environnements."
+      ],
+      "maitrise": [
+        "Je me considère comme «confirmé» en Git, à l'aise avec les commandes de base comme commit, merge, rebase, ainsi que les fonctionnalités avancées telles que les branches distantes, les workflows Gitflow et la gestion des conflits. J'ai également une bonne maîtrise des outils associés comme GitHub, GitLab et Bitbucket."
+      ],
+      "formation": [
+        "Je continue à approfondir mes connaissances en Git, notamment sur les fonctionnalités avancées comme les hooks, la gestion des sous-modules et l'automatisation des processus de révision de code grâce à GitHub Actions."
+      ],
+      "conseils": [
+        "Pour bien débuter avec Git, il est crucial de comprendre les concepts fondamentaux comme les commits, les branches et les fusions. Utiliser des plateformes comme GitHub pour collaborer sur des projets open-source permet de se familiariser avec les pratiques courantes. La lecture de la documentation officielle et la pratique régulière sur des projets concrets sont des moyens efficaces pour progresser."
+      ],
+      "projet": [
+        "Mon objectif est de continuer à perfectionner mes compétences en Git en automatisant davantage les workflows de développement. Je souhaite intégrer des pipelines CI/CD complexes et exploiter au maximum les fonctionnalités de gestion de version pour améliorer la qualité et la rapidité des livrables."
+      ],
+      "importance": [
+        "Git est une compétence essentielle pour tout développeur moderne, car il facilite la collaboration, la gestion des versions et la qualité du code. Il permet de maintenir un historique clair des modifications et de coordonner efficacement le travail entre plusieurs contributeurs, ce qui améliore la productivité et la fiabilité des projets."
+      ]
+    },
+    "java": {
+      "logo": "/images/java.png",
+      "title": "Java",
+      "presentation": [
+        "Java est un langage de programmation orienté objet, robuste et polyvalent, créé par Sun Microsystems en 1995 et désormais maintenu par Oracle. Connu pour sa portabilité, Java fonctionne sur le principe du 'Write Once, Run Anywhere' (WORA), ce qui signifie qu'un programme écrit en Java peut s'exécuter sur n'importe quelle plateforme dotée de la machine virtuelle Java (JVM).",
+        "Le langage est utilisé dans de nombreux domaines, allant des applications mobiles et web aux systèmes embarqués et logiciels d'entreprise. Grâce à sa richesse en bibliothèques et frameworks, Java permet aux développeurs de concevoir des applications fiables, sécurisées et performantes."
+      ],
+      "utilisations": [
+        "Java a été une compétence clé dans plusieurs de mes projets professionnels. Dans le cadre du projet Vidibio, une application mobile développée en React Native, j'ai créé un module natif pour Android en Java afin d'intégrer les fonctionnalités d'ARCore, permettant de scanner et d'analyser les haies bocagères avec précision. Ce module a été essentiel pour exploiter pleinement les capacités de réalité augmentée sur la plateforme Android.",
+        "Dans le projet Gava, Java a été utilisé côté back-end pour développer une API Java EE qui gérait les données du site web, notamment l'authentification des utilisateurs, la gestion des joueurs et l'organisation des tournois. Cette API a permis d'assurer une communication fluide et sécurisée entre le front-end et le serveur, tout en garantissant la scalabilité du système.",
+        "Enfin, pour le projet Optivex, j'ai contribué au développement d'une application mobile destinée à UPSA. Cette application a été conçue pour informatiser le suivi logistique des livraisons internes par camions et livreurs. L'implémentation en Java a permis de structurer efficacement le suivi des données et d'optimiser les processus logistiques en temps réel."
+      ],
+      "maitrise": [
+        "Je situe mon niveau de compétence en Java à « confirmé ». Je suis à l'aise avec la programmation orientée objet, les concepts avancés du langage, et l'utilisation de framework tel que Java EE. Mon expérience inclut la création de modules natifs pour Android, le développement d'API robustes et la gestion d'applications mobiles complexes. Ces compétences m'ont permis de répondre à des exigences variées tout en respectant les contraintes de performance et de sécurité."
+      ],
+      "formation": [
+        "Bien que j'aie quelque peu délaissé Java pour me concentrer sur d'autres technologies, je reste informé des nouveautés et continue à m'auto-former sur les outils et frameworks qui facilitent son développement. Je m'intéresse toujours à son utilisation dans le contexte des microservices, notamment avec Spring Boot, pour concevoir des systèmes modulaires, résilients et scalables."
+      ],
+      "conseils": [
+        "À mon avis, pour bien apprendre Java, il faut commencer par le faire de manière native, c'est-à-dire en travaillant uniquement avec le Java pur, sans frameworks ni outils supplémentaires. C'est vraiment important pour comprendre comment tout fonctionne en profondeur et pour poser des bases solides en programmation orientée objet. Une fois qu'on est à l'aise avec ça, on peut ajouter des outils comme Maven ou Gradle et explorer des frameworks comme Java EE ou Spring. Ça permet d'élargir ses compétences tout en ayant une meilleure compréhension de ce qu'on fait. Travailler sur des projets concrets est aussi une excellente façon de mettre en pratique et d'apprendre de manière progressive."
+      ],
+      "projet": [
+        "Pour l'instant, je préfère m'orienter vers d'autres technologies, que ce soit dans le cadre professionnel ou personnel. Cependant, si des opportunités liées à Java se présentent à moi, je les accepterais avec plaisir. Même si je n'y consacre pas autant de temps qu'avant, je garde un réel intérêt pour ce langage et continue de m'informer sur ses nouveautés, car je reste curieux des possibilités qu'il peut offrir."
+      ],
+      "importance": [
+        "Pour moi, Java est une compétence vraiment importante, car c'est grâce à ce langage que j'ai appris les principes fondamentaux de la programmation orientée objet ainsi que la gestion des données. J'ai beaucoup apprécié travailler avec cette technologie qui m'a permis de développer des solutions robustes et efficaces. Sa fiabilité, sa portabilité et sa richesse en bibliothèques en font un choix privilégié pour développer des applications critiques. Ma maîtrise de Java m'a aidé à apporter des solutions de qualité tout en optimisant mon efficacité sur les projets. Cette compétence reste un atout majeur pour concevoir des systèmes fiables et innovants."
+      ]
+    },
+    "kubernetes": {
+      "logo": "/images/kubernetes.png",
+      "title": "Kubernetes",
+      "presentation": [
+        "Kubernetes est une plateforme open-source conçue pour automatiser le déploiement, la mise à l'échelle et la gestion des applications conteneurisées. Créée par Google, Kubernetes est devenue une référence incontournable pour orchestrer des conteneurs à grande échelle. Elle permet de répartir les charges, de surveiller les applications et de garantir leur disponibilité, tout en simplifiant la gestion des infrastructures complexes."
+      ],
+      "utilisations": [
+        "J'ai utilisé Kubernetes dans plusieurs projets significatifs pour optimiser la gestion et l'orchestration des conteneurs. Dans le cadre du projet Vidibio, j'ai géré un cluster Kubernetes comprenant plusieurs nœuds. J'ai orchestré différents pods, notamment pour la base de données, des serveurs de sauvegarde, l'API principale et un service de traitement d'images. Ce projet m'a permis de configurer et gérer des ressources essentielles comme les load balancers et les volumes, garantissant ainsi une répartition efficace des charges et une disponibilité optimale des services.",
+        "Dans le projet Theseus-AI, j'ai utilisé Kubernetes de manière plus ciblée pour configurer un load balancer capable de gérer efficacement les requêtes envoyées au serveur de bots. Cette configuration permettait d'ouvrir ou de fermer dynamiquement des serveurs en fonction de l'utilisation, offrant une solution flexible et adaptée aux besoins fluctuants de l'application."
+      ],
+      "maitrise": [
+        "Je situe mon niveau de compétence en Kubernetes à 'autonome'. Au cours de mes expériences précédentes, j'ai mis un effort particulier à comprendre en profondeur le fonctionnement de Kubernetes, ce qui m'a permis de maîtriser les concepts fondamentaux comme la gestion des pods, des services, des volumes et des load balancers. Bien que je maîtrise le sujet et sois capable de gérer des clusters et des infrastructures de manière indépendante, je continue de me former pour explorer davantage les aspects avancés et perfectionner mes compétences."
+      ],
+      "formation": [
+        "Je continue d'approfondir mes connaissances en Kubernetes, car j'apprécie particulièrement cette technologie et la trouve extrêmement pratique. J'aime découvrir de nouvelles configurations et cas d'usage, ce qui me permet de mieux comprendre son fonctionnement et de perfectionner mes compétences. Mon objectif est d'améliorer ma maîtrise pour gérer des environnements encore plus complexes et proposer des solutions toujours plus efficaces."
+      ],
+      "conseils": [
+        "Pour débuter avec Kubernetes, je recommande de se familiariser avec ses concepts de base comme les pods, les services et les déploiements. Une fois ces fondamentaux maîtrisés, il est utile de travailler sur des projets réels pour comprendre comment orchestrer des conteneurs et gérer les ressources. L'utilisation d'outils complémentaires comme Helm pour gérer les configurations et Minikube pour tester localement peut également accélérer l'apprentissage."
+      ],
+      "projet": [
+        "Kubernetes est une technologie que je trouve fascinante, car elle offre des solutions puissantes pour gérer des infrastructures complexes. Mon objectif est de continuer à l'utiliser dans mes futurs projets, qu'ils soient personnels ou professionnels, pour garantir la scalabilité, la disponibilité et la robustesse des applications. En approfondissant mes connaissances, je souhaite devenir une référence dans l'orchestration de conteneurs et aider à concevoir des systèmes modernes et résilients."
+      ],
+      "importance": [
+        "Pour moi, Kubernetes est une compétence essentielle dans le développement et la gestion d'infrastructures modernes. Il simplifie l'orchestration des conteneurs et offre des outils puissants pour garantir la fiabilité et la scalabilité des applications. Que ce soit pour gérer un cluster complet dans Vidibio ou pour configurer un load balancer dans Theseus-AI, Kubernetes m'a permis d'optimiser l'utilisation des ressources et de garantir des performances élevées. C'est un outil indispensable pour tout développeur ou architecte travaillant avec des environnements distribués."
+      ]
+    },
+    "typescript": {
+      "logo": "/images/typescript.png",
+      "title": "TypeScript",
+      "presentation": [
+        "TypeScript est un sur-ensemble de JavaScript qui ajoute un typage statique et des fonctionnalités de programmation orientée objet (POO). Créé par Microsoft en 2012, TypeScript permet aux développeurs de créer des applications robustes, maintenables et évolutives. Il se compile en JavaScript pur, ce qui le rend compatible avec tous les navigateurs et environnements qui supportent JavaScript.",
+        "Grâce à son typage statique, TypeScript aide à détecter les erreurs à la compilation plutôt qu'à l'exécution, réduisant ainsi le nombre de bugs en production. Il propose aussi des concepts avancés comme les interfaces, les génériques et les décorateurs, qui enrichissent le langage et facilitent l'écriture d'un code structuré et clair."
+      ],
+      "utilisations": [
+        "J'ai commencé à utiliser TypeScript dans le cadre de mes projets professionnels, attiré par les avantages du typage statique et de la POO. Lors du projet Gava, j'ai développé un site web pour l'organisation de tournois d'e-sport en utilisant Angular et TypeScript, ce qui m'a permis de réduire les erreurs liées à la manipulation des données complexes et d'améliorer la lisibilité du code. Dans le cadre de Vidibio, une application mobile innovante réalisée avec React Native, TypeScript a facilité l'intégration de fonctionnalités liées à la réalité augmentée, tout en structurant le code de manière modulaire et performante. Enfin, pour Theseus-AI, j'ai participé au développement d'un site en Next.js et d'une API NestJS intégrant Puppeteer pour enregistrer et analyser des réunions via Google Meet, Zoom et Teams. Dans chaque projet, TypeScript a significativement amélioré la robustesse et la maintenabilité du code."
+      ],
+      "maitrise": [
+        "Je situe aujourd'hui mon niveau de compétence en TypeScript à \"confirmé\". Je suis à l'aise avec les concepts avancés du langage tels que les interfaces, les génériques et les décorateurs. J'ai également une bonne expérience de l'utilisation de bibliothèques et frameworks connexes comme Prisma ORM et NestJS. Ces outils ont été essentiels pour accélérer et améliorer la qualité de mes livrables."
+      ],
+      "formation": [
+        "Je continue à approfondir mes connaissances en TypeScript, en particulier dans l'intégration avec des technologies telles que Prisma ORM et les décorateurs avancés de NestJS. Par ailleurs, je me forme à l'optimisation des performances dans des environnements lourds comme les applications full-stack complexes utilisant TypeScript."
+      ],
+      "conseils": [
+        "Pour bien débuter avec TypeScript, il est essentiel de maîtriser les bases de JavaScript afin de bien saisir les avantages qu'apporte TypeScript. En explorant progressivement des concepts avancés comme les génériques, les unions ou les types conditionnels, vous pourrez tirer parti de toute la puissance de ce langage. L'utilisation d'outils tels que ESLint et Prettier contribue également à maintenir un code propre et cohérent. Enfin, travailler sur des projets concrets est une excellente façon de comprendre comment intégrer TypeScript dans des contextes réels et de bénéficier pleinement de ses fonctionnalités."
+      ],
+      "projet": [
+        "Mon objectif est de continuer à utiliser TypeScript pour développer des solutions full-stack innovantes et performantes. À moyen terme, j'aimerais vraiment m'orienter vers cette technologie, car c'est celle que je préfère. Grâce à son environnement simple d'utilisation et ses fonctionnalités avancées, TypeScript me permet de travailler avec efficacité tout en rendant le code plus lisible et maintenable. Cela m'inspire à approfondir mes compétences et à en faire une expertise centrale de mon parcours."
+      ],
+      "importance": [
+        "TypeScript est une compétence indispensable dans le développement moderne, car il combine la flexibilité de JavaScript avec une meilleure sécurité et lisibilité. Dans mes projets, TypeScript a permis d'améliorer significativement les performances et la maintenabilité du code, réduisant ainsi le temps passé sur le débogage et l'intégration. Cela en fait un choix incontournable pour le développement d'applications web et mobiles modernes."
+      ]
+    }
+  },
+  "humaines": {
+    "adaptabilite": {
+      "logo": "/images/adaptabilite.png",
+      "title": "Adaptabilité",
+      "presentation": [
+        "L'adaptabilité est une compétence essentielle pour tout développeur. Elle consiste à s'adapter rapidement aux nouvelles technologies, aux méthodologies de travail et aux environnements techniques variés. Dans un domaine en constante évolution comme l'informatique, savoir apprendre de nouveaux langages, outils ou frameworks est indispensable pour rester pertinent et efficace."
+      ],
+      "utilisations": [
+        "Tout au long de mon cursus scolaire et de mes expériences professionnelles, j'ai été amené à faire preuve d'une grande adaptabilité. Dans mes projets comme Gava et Optivex, j'ai dû passer d'un langage à un autre, m'adapter à différentes technologies et apprendre rapidement de nouvelles méthodologies de développement.",
+        "Dans un cadre plus professionnel, à travers des expériences comme Vidibio et Theseus-AI, j'ai travaillé sur des infrastructures variées, passant de React Native à Kubernetes, en gérant des API, des systèmes de traitement d'images et même des serveurs. Mon auto-entreprise m'a également poussé à naviguer entre plusieurs domaines, du développement pur à la gestion de systèmes et à l'intégration continue. Cette capacité d'adaptation me permet aujourd'hui d'aborder de nouveaux projets sans difficulté, quelle que soit la stack technologique ou l'environnement de travail."
+      ],
+      "maitrise": [
+        "Je considère mon niveau d'adaptabilité comme 'élevé'. J'ai développé la capacité de m'immerger rapidement dans de nouveaux environnements, d'apprendre de nouveaux langages et outils en fonction des besoins des projets, et de passer d'un système d'exploitation à un autre sans difficulté. Mon expérience dans des contextes variés m'a permis de renforcer cette flexibilité et de répondre efficacement aux exigences techniques, même lorsque celles-ci évoluent en cours de projet."
+      ],
+      "formation": [
+        "Je continue d'améliorer mon adaptabilité en explorant régulièrement de nouvelles technologies et en me tenant informé des évolutions du secteur. Que ce soit par des projets personnels, des formations en ligne ou des défis techniques, je cherche en permanence à élargir mon champ de compétences pour être capable de répondre aux besoins changeants du développement logiciel."
+      ],
+      "conseils": [
+        "Pour développer son adaptabilité, il est essentiel d'avoir une ouverture d'esprit face aux nouvelles technologies et de ne pas craindre de sortir de sa zone de confort. Tester régulièrement de nouveaux langages ou frameworks, comprendre les bases des différents systèmes d'exploitation et être curieux des évolutions technologiques sont des habitudes qui permettent de progresser rapidement."
+      ],
+      "projet": [
+        "L'adaptabilité est une compétence que je considère comme centrale dans mon parcours. Mon objectif est de continuer à renforcer ma capacité à apprendre et à m'adapter rapidement aux nouvelles tendances du développement. Dans mon auto-entreprise, cette compétence me permet d'accepter une grande variété de projets et d'y apporter des solutions optimales, quel que soit l'environnement technique ou le domaine concerné."
+      ],
+      "importance": [
+        "Pour moi, l'adaptabilité est une qualité essentielle pour un développeur. Elle permet de faire face aux évolutions constantes du secteur et d'être efficace sur des projets aux exigences variées. Grâce à cette compétence, j'ai pu travailler sur des technologies très différentes et mener à bien des missions qui demandaient une montée en compétence rapide. Être adaptable, c'est garantir sa progression et sa réussite dans un domaine en perpétuelle mutation."
+      ]
+    },
+    "anglais": {
+      "logo": "/images/anglais.png",
+      "title": "Anglais",
+      "presentation": [
+        "L'anglais est une compétence essentielle dans le domaine du développement, que ce soit pour la communication avec des collègues, la lecture de documentation technique ou l'apprentissage de nouvelles technologies. Aujourd'hui, la majorité des ressources, des tutoriels et des documentations sont disponibles en anglais, ce qui en fait une langue incontournable pour tout développeur."
+      ],
+      "utilisations": [
+        "J'ai eu l'occasion d'utiliser l'anglais dans un cadre professionnel à travers mes expériences sur des projets comme Vidibio et Theseus-AI, où j'ai collaboré avec des collègues anglophones. Cela m'a poussé à m'adapter et à m'exprimer couramment en anglais, aussi bien à l'oral qu'à l'écrit, notamment pour les réunions, les comptes rendus et les échanges techniques.",
+        "En dehors du cadre professionnel, j'ai développé mes compétences en anglais à travers mon parcours scolaire et universitaire, notamment en obtenant un diplôme du TOEIC. Par ailleurs, je consomme régulièrement du contenu en anglais, que ce soit des films, des séries, des articles ou de la documentation technique, ce qui me permet d'améliorer constamment ma compréhension et mon vocabulaire technique."
+      ],
+      "maitrise": [
+        "Aujourd'hui, je considère mon niveau en anglais comme courant. Je suis à l'aise aussi bien à l'écrit qu'à l'oral, et je peux communiquer efficacement dans un environnement professionnel international. J'ai acquis une bonne fluidité grâce à mes expériences de travail avec des équipes anglophones et à mon immersion régulière dans du contenu en anglais."
+      ],
+      "formation": [
+        "Bien que mon niveau me permette d'être à l'aise dans un contexte professionnel, je continue à perfectionner mon anglais en lisant de la documentation technique, en regardant des conférences et en échangeant avec des collègues anglophones. Mon objectif est d'atteindre un niveau encore plus fluide et naturel, notamment sur les aspects techniques et professionnels."
+      ],
+      "conseils": [
+        "Pour progresser en anglais, je recommande de s'immerger autant que possible dans la langue en regardant des films et des séries en version originale, en lisant des articles techniques en anglais et en pratiquant avec des collègues ou des amis. L'apprentissage ne doit pas être uniquement académique : plus on pratique dans un contexte réel, plus l'amélioration est rapide."
+      ],
+      "projet": [
+        "L'anglais étant une compétence clé dans mon domaine, je souhaite continuer à le perfectionner afin d'être capable de travailler sur des projets internationaux sans aucune barrière linguistique. À l'avenir, j'aimerais collaborer davantage avec des équipes anglophones et, pourquoi pas, évoluer dans un environnement de travail où l'anglais est la langue principale."
+      ],
+      "importance": [
+        "L'anglais est indispensable dans mon métier, car il ouvre de nombreuses opportunités professionnelles et facilite l'accès à des ressources essentielles. Que ce soit pour collaborer avec des équipes internationales, lire de la documentation ou suivre des formations avancées, l'anglais est un atout incontournable. Grâce à cette compétence, je peux apprendre plus rapidement, travailler avec des personnes du monde entier et évoluer dans un environnement technologique en constante évolution."
+      ]
+    },
+    "autonomie": {
+      "logo": "/images/autonomie.png",
+      "title": "Autonomie",
+      "presentation": [
+        "L'autonomie, dans le domaine du développement, est la capacité à apprendre, résoudre des problèmes et avancer sur un projet sans supervision constante. Elle est essentielle pour gagner en efficacité et en productivité, tout en restant adaptable aux défis rencontrés."
+      ],
+      "utilisations": [
+        "L'autonomie est une compétence clé dans mon travail quotidien de développeur. Dans mes projets, qu'ils soient personnels, professionnels ou dans le cadre de ma micro-entreprise de développement, je suis souvent amené à apprendre de nouvelles technologies et à résoudre des problématiques techniques sans assistance directe."
+      ],
+      "maitrise": [
+        "Je considère mon niveau en autonomie comme 'maîtrisé'. J'ai acquis une grande expérience en travaillant sur des projets variés qui m'ont poussé à apprendre et évoluer par moi-même."
+      ],
+      "formation": [
+        "Je continue de renforcer mon autonomie en m'auto-formant sur les nouvelles technologies et les meilleures pratiques du développement."
+      ],
+      "conseils": [
+        "Pour développer son autonomie, il est essentiel d'apprendre à chercher l'information efficacement, à structurer son travail et à fixer des objectifs clairs."
+      ],
+      "projet": [
+        "L'autonomie est une qualité que je souhaite continuer à développer dans ma carrière. Mon objectif est d'être capable de gérer des projets de plus en plus complexes."
+      ],
+      "importance": [
+        "Pour moi, l'autonomie est une compétence fondamentale pour un développeur. Elle permet d'avancer efficacement sur des projets, d'apprendre continuellement et de s'adapter aux nouvelles technologies."
+      ]
+    },
+    "flexibilite": {
+      "logo": "/images/flexibilite.png",
+      "title": "Flexibilité",
+      "presentation": [
+        "La flexibilité est une compétence clé dans le domaine du développement. Elle permet de s'adapter aux imprévus, de modifier ses approches en fonction des besoins d'un projet et d'ajuster ses méthodes de travail pour garantir un résultat optimal."
+      ],
+      "utilisations": [
+        "J'ai développé une grande flexibilité tout au long de mes expériences, notamment dans des projets comme Gava, Optivex, Vidibio et Theseus-AI."
+      ],
+      "maitrise": [
+        "Je considère que ma flexibilité est bien développée. J'ai appris à modifier rapidement mon approche face aux imprévus."
+      ],
+      "formation": [
+        "Je continue d'améliorer ma flexibilité en expérimentant de nouvelles méthodologies et en explorant différentes manières de structurer mon travail."
+      ],
+      "conseils": [
+        "Développer sa flexibilité demande d'apprendre à gérer les imprévus et à accepter le changement comme une opportunité d'évolution."
+      ],
+      "projet": [
+        "La flexibilité est une compétence que je considère essentielle dans mon parcours. Mon objectif est de continuer à affiner ma capacité à m'adapter aux nouvelles situations."
+      ],
+      "importance": [
+        "Pour moi, la flexibilité est indispensable pour un développeur. Elle permet de mieux gérer les évolutions technologiques, d'optimiser sa productivité et de s'adapter aux exigences des projets."
+      ]
+    },
+    "pensee": {
+      "logo": "/images/pensee.png",
+      "title": "Pensée critique",
+      "presentation": [
+        "La pensée critique est une compétence essentielle pour un développeur. Elle permet d'analyser un problème, d'évaluer différentes solutions et de prendre des décisions éclairées."
+      ],
+      "utilisations": [
+        "Tout au long de mon parcours, j'ai développé ma pensée critique en travaillant sur divers projets."
+      ],
+      "maitrise": [
+        "Je considère que ma pensée critique est bien développée. J'ai acquis l'habitude de questionner les choix techniques."
+      ],
+      "formation": [
+        "Je continue d'affiner ma pensée critique en étudiant des méthodologies de résolution de problèmes."
+      ],
+      "conseils": [
+        "Développer sa pensée critique passe par l'apprentissage de la remise en question et la curiosité intellectuelle."
+      ],
+      "projet": [
+        "La pensée critique est un atout majeur dans mon travail, et je souhaite continuer à la développer."
+      ],
+      "importance": [
+        "Pour moi, la pensée critique est indispensable pour un développeur. Elle permet de faire des choix techniques pertinents."
+      ]
+    }
+  }
+}

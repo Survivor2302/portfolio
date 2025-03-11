@@ -35,11 +35,11 @@ export default function Home() {
           <section className=" flex flex-col gap-8 ">
             <div className="flex gap-8 items-center flex-col md:flex-row">
               <Image
-                src={"/images/veigar.jpg"}
-                width={100}
-                height={100}
-                className="h-fit max-w-48 w-full overflow-hidden"
-                alt=""
+                src={"/images/profile_picture.jpg"}
+                width={2316}
+                height={3088}
+                className="h-fit max-w-82 w-full overflow-hidden rounded-lg border-4 border-transparent bg-gradient-to-r from-pink-light to-purple-light p-1"
+                alt="Profile picture"
               />
               <div className="flex flex-col gap-8 w-full">
                 <div className="flex flex-col gap-2 w-full">
@@ -97,6 +97,85 @@ export default function Home() {
               </p>
             </div>
           </section>
+        </div>
+      </section>
+
+      <section className="mb-24 md:px-28 px-8 mt-24">
+        <h2 className="text-2xl text-center mb-8 font-bold bg-gradient-to-r from-pink-light/80 to-purple-light/80 bg-clip-text text-transparent">
+          Parcours
+        </h2>
+        <div className="relative flex flex-col md:flex-row justify-center items-center gap-8">
+          <div className="flex flex-col items-center relative">
+            <Image
+              src="/images/logo/theseus.png"
+              alt="Logo 1"
+              width={100}
+              height={100}
+              className="h-12 mb-4 object-contain"
+            />
+            <div className="relative flex flex-col items-center">
+              <div className="bg-gradient-to-r from-pink-light/80 to-purple-light/80 text-white px-4 py-1 rounded-full mb-2 relative z-10">
+                2023-2025
+              </div>
+              <div className="absolute top-1/2 -left-32 -right-32 h-1 bg-gray-300"></div>
+            </div>
+            <h3 className="font-bold">Theseus-ai</h3>
+            <p className="text-center">Développeur fullstack – Bordeaux</p>
+          </div>
+
+          <div className="flex flex-col items-center relative">
+            <Image
+              src="/images/logo/inria.jpg"
+              alt="Logo 2"
+              width={100}
+              height={100}
+              className="h-12 mb-4 object-contain"
+            />
+            <div className="relative flex flex-col items-center">
+              <div className="bg-gradient-to-r from-pink-light/80 to-purple-light/80 text-white px-4 py-1 rounded-full mb-2 relative z-10">
+                2023
+              </div>
+              <div className="absolute top-1/2 -left-32 -right-32 h-1 bg-gray-300"></div>
+            </div>
+            <h3 className="font-bold">Vidibio, Inria start-up studio</h3>
+            <p className="text-center">Développeur fullstack – Agen</p>
+          </div>
+
+          <div className="flex flex-col items-center relative">
+            <Image
+              src="/images/logo/esiea.png"
+              alt="Logo 3"
+              width={100}
+              height={100}
+              className="h-12 mb-4 object-contain"
+            />
+            <div className="relative flex flex-col items-center">
+              <div className="bg-gradient-to-r from-pink-light/80 to-purple-light/80 text-white px-4 py-1 rounded-full mb-2 relative z-10">
+                2020-2025
+              </div>
+              <div className="absolute top-1/2 -left-32 -right-32 h-1 bg-gray-300"></div>
+            </div>
+            <h3 className="font-bold">ESIEA</h3>
+            <p className="text-center">RNCP 1, ingénierie logicielle – Agen</p>
+          </div>
+
+          <div className="flex flex-col items-center relative">
+            <Image
+              src="/images/logo/stcap.png"
+              alt="Logo 4"
+              width={100}
+              height={100}
+              className="h-12 mb-4 object-contain"
+            />
+            <div className="relative flex flex-col items-center">
+              <div className="bg-gradient-to-r from-pink-light/80 to-purple-light/80 text-white px-4 py-1 rounded-full mb-2 relative z-10">
+                2017-2020
+              </div>
+              <div className="absolute top-1/2 -left-32 -right-32 h-1 bg-gray-300"></div>
+            </div>
+            <h3 className="font-bold">Lycée Saint-Caprais</h3>
+            <p className="text-center">Baccalauréat Scientifique – Agen</p>
+          </div>
         </div>
       </section>
 
