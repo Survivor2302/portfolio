@@ -54,12 +54,13 @@ export function generateStaticParams() {
   return params;
 }
 
-export default function CompetencePage({
+export default async function CompetencePage({
   params,
 }: {
-  params: { type: CompetenceType; name: CompetenceName };
+  params: Promise<{ type: CompetenceType; name: CompetenceName }>;
 }) {
-  const { type, name } = params;
+  const resolvedParams = await params;
+  const { type, name } = resolvedParams;
 
   if (
     !competencesData[type] ||
