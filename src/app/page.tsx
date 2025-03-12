@@ -13,21 +13,35 @@ export default function Home() {
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
           <Link
             className="px-6 py-2 flex gap-2 bg-gradient-to-r from-pink-light to-purple-light  text-white  font-bold rounded-md hover:scale-105 transition-all duration-100"
-            href="#competences"
+            href="#qui-suis-je"
           >
-            <Code className="w-4" /> Compétences
+            <Code className="w-4" />
+            Présentation
           </Link>
-
           <Link
             className="px-6 py-2 flex gap-2 bg-gradient-to-r from-pink-light to-purple-light  text-white  font-bold rounded-md hover:scale-105 transition-all duration-100"
-            href="#competences"
+            href="#parcours"
+          >
+            <Code className="w-4" />
+            Parcours
+          </Link>
+          <Link
+            className="px-6 py-2 flex gap-2 bg-gradient-to-r from-pink-light to-purple-light  text-white  font-bold rounded-md hover:scale-105 transition-all duration-100"
+            href="#realisations"
           >
             <FolderOpen className="w-4" />
             Réalisations
           </Link>
+          <Link
+            className="px-6 py-2 flex gap-2 bg-gradient-to-r from-pink-light to-purple-light  text-white  font-bold rounded-md hover:scale-105 transition-all duration-100"
+            href="#competences"
+          >
+            <Code className="w-4" />
+            Compétences
+          </Link>
         </div>
       </section>
-      <section className="mb-24  md:px-28 px-8 mt-24">
+      <section id="qui-suis-je" className="mb-24 md:px-28 px-8 pt-24">
         <div className=" px-8 md:px-24">
           <h2 className="text-2xl text-center mb-8 font-bold bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent">
             Qui suis-je ?
@@ -100,7 +114,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mb-24 md:px-28 px-8 mt-24">
+      <hr className="border-0 h-1 bg-gradient-to-r from-pink-light to-purple-light mx-28" />
+
+      <section id="parcours" className="mb-24 md:px-28 px-8 pt-24">
         <h2 className="text-2xl text-center mb-8 font-bold bg-gradient-to-r from-pink-light/80 to-purple-light/80 bg-clip-text text-transparent">
           Parcours
         </h2>
@@ -179,7 +195,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="competences" className="mb-24 md:px-28 px-8 pt-24">
+      <hr className="border-0 h-1 bg-gradient-to-r from-pink-light to-purple-light mx-28" />
+
+      <section id="realisations" className="mb-24 md:px-28 px-8 pt-24">
         <h1 className=" text-center text-3xl font-bold bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent">
           Réalisations
         </h1>
@@ -190,6 +208,7 @@ export default function Home() {
             href="/realisations/theseus"
             text="In capital markets, every detail counts, and every second too. Yet, we are not machines and must be assisted by machines : Theseus refines data from your conversations to keep you focused, informed and relevant."
             position="left"
+            showDivider={true}
           />
 
           <CardRealisations
@@ -198,9 +217,36 @@ export default function Home() {
             href="/realisations/theseus"
             text="In capital markets, every detail counts, and every second too. Yet, we are not machines and must be assisted by machines : Theseus refines data from your conversations to keep you focused, informed and relevant."
             position="right"
+            showDivider={true}
+          />
+          <CardRealisations
+            img="/images/mockup-leo.png"
+            titre="Theseus"
+            href="/realisations/theseus"
+            text="In capital markets, every detail counts, and every second too. Yet, we are not machines and must be assisted by machines : Theseus refines data from your conversations to keep you focused, informed and relevant."
+            position="left"
+            showDivider={true}
+          />
+          <CardRealisations
+            img="/images/mockup-leo.png"
+            titre="Theseus"
+            href="/realisations/theseus"
+            text="In capital markets, every detail counts, and every second too. Yet, we are not machines and must be assisted by machines : Theseus refines data from your conversations to keep you focused, informed and relevant."
+            position="right"
+            showDivider={true}
+          />
+          <CardRealisations
+            img="/images/mockup-leo.png"
+            titre="Theseus"
+            href="/realisations/theseus"
+            text="In capital markets, every detail counts, and every second too. Yet, we are not machines and must be assisted by machines : Theseus refines data from your conversations to keep you focused, informed and relevant."
+            position="left"
+            showDivider={false}
           />
         </div>
       </section>
+
+      <hr className="border-0 h-1 bg-gradient-to-r from-pink-light to-purple-light mx-28" />
 
       <section id="competences" className="mb-24 md:px-28 px-8 pt-24">
         <h1 className=" text-center text-3xl font-bold bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent">

@@ -8,6 +8,7 @@ type Props = {
   titre: string;
   img: string;
   position: "left" | "right";
+  showDivider: boolean;
 };
 
 export default function CardRealisations({
@@ -16,6 +17,7 @@ export default function CardRealisations({
   titre,
   img,
   position,
+  showDivider,
 }: Props) {
   return (
     <>
@@ -50,7 +52,7 @@ export default function CardRealisations({
           />
         )}
       </section>
-      <div className="w-full h-[1px] bg-gray-300 my-12" />
+      {showDivider && <div className="w-full h-[1px] bg-gray-300 my-2" />}
     </>
   );
 }
