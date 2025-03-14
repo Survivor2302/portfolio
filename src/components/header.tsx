@@ -172,9 +172,9 @@ export default function Header() {
                 </Link>
                 <Link
                   className="px-4 py-2 rounded-t-lg hover:text-transparent hover:font-bold"
-                  href="/realisations/random"
+                  href="/realisations/todoapp"
                 >
-                  RANDOM
+                  TodoApp
                 </Link>
               </ul>
             </div>

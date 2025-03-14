@@ -1,0 +1,119 @@
+{
+  "vidibio": {
+    "titre": "Vidibio",
+    "img": "/images/veigar.jpg",
+    "description": "Vidibio est une application mobile qui permet de scanner des haies et de collecter des données détaillées sur la biodiversité et la biomasse.",
+    "missions": [
+      "Vidibio, une startup avant-gardiste dans le domaine de la technologie agricole, se consacre à révolutionner les pratiques agricoles par le biais de solutions technologiques innovantes. Notre mission était de concevoir et développer une application mobile et une API qui permettraient aux agriculteurs et aux techniciens agricoles de scanner des haies, de collecter des données détaillées sur la biomasse et la biodiversité, et de fournir des analyses précises pour une gestion optimale des ressources naturelles. Cette initiative visait à promouvoir une agriculture plus durable et écologiquement responsable, en utilisant la technologie pour améliorer la qualité et la précision des informations environnementales disponibles."
+    ],
+    "role": [
+      "En tant que Développeur Full-Stack, j'étais responsable de la conception, du développement et de l'implémentation de l'ensemble de la solution, couvrant à la fois le backend et le frontend de l'application. Mon rôle impliquait également la gestion de la base de données, l'assurance de la sécurité des données, et l'intégration de diverses technologies de pointe pour assurer une expérience utilisateur fluide et efficace."
+    ],
+    "technologies": [
+      "Le projet a été développé en utilisant une combinaison de technologies modernes et robustes. Pour le backend, nous avons utilisé Python avec Django et FastAPI pour une gestion efficace des requêtes et une intégration facile avec d'autres services. Le frontend a été développé avec React Native pour l'application mobile et React pour l'application web, permettant une expérience utilisateur cohérente et réactive sur divers appareils. Docker et Kubernetes ont été utilisés pour le déploiement et la gestion de l'infrastructure, assurant une scalabilité et une maintenance aisée. ",
+      "ARCore et Mapbox ont été intégrés pour enrichir l'application mobile avec des fonctionnalités de réalité augmentée et de cartographie interactive."
+    ],
+    "client": [
+      "Vidibio est une entreprise innovante dans le secteur de l'agrotechnologie, dédiée à l'amélioration des pratiques agricoles à travers la technologie. Leur engagement envers la durabilité et l'innovation a guidé le développement de l'application, visant à fournir aux agriculteurs des outils précis pour la gestion de l'environnement."
+    ],
+    "objectif": [
+      "Le projet avait pour objectif de fournir une solution technologique qui non seulement facilite la collecte de données environnementales par les utilisateurs mais aussi améliore la précision et la fiabilité de ces données. Les enjeux étaient de taille, notamment en termes de précision des données, de facilité d'utilisation de l'application, et de sécurité des données collectées. L'application devait être capable de fonctionner dans diverses conditions environnementales et être accessible à un large éventail d'utilisateurs, nécessitant une conception robuste et adaptable."
+    ],
+    "galerie": [
+      "La fonctionnalité clé de l'application était sa carte interactive, développée avec Mapbox, qui affichait les haies scannées avec des détails enrichis pour chaque point. Cette carte permettait non seulement de visualiser les données mais aussi d'interagir avec elles, offrant aux utilisateurs la possibilité de zoomer sur des zones spécifiques, d'obtenir des informations détaillées sur la biodiversité et la biomasse, et de visualiser des modèles 3D des haies. Cette interactivité améliorait l'engagement des utilisateurs et leur permettait de comprendre mieux l'impact de leurs pratiques agricoles sur l'environnement."
+    ],
+    "processus": [
+      "Le développement de l'application Vidibio a été un processus exhaustif qui a commencé par une phase de planification détaillée, où les besoins du client et les spécifications techniques ont été soigneusement analysés. Cette phase a été suivie par le développement de prototypes, permettant de tester différentes approches et technologies avant de finaliser la conception. Une fois les prototypes approuvés, le développement complet a commencé, avec une attention particulière portée à l'expérience utilisateur, à la sécurité des données, et à l'intégration des fonctionnalités de réalité augmentée et de cartographie. Le processus incluait des tests réguliers pour s'assurer que chaque aspect de l'application répondait aux attentes en termes de performance et de fiabilité."
+    ],
+    "conclusions": [
+      "Le projet Vidibio a été une aventure technologique et professionnelle extrêmement enrichissante. Il a non seulement permis de mettre en œuvre des solutions technologiques avancées pour répondre à des défis environnementaux complexes mais a aussi offert une plateforme pour affiner mes compétences en développement full-stack. La collaboration étroite avec Vidibio et leur engagement envers l'innovation ont été cruciaux pour le succès du projet. Ce projet a démontré l'importance cruciale de la technologie dans la transformation des pratiques agricoles et a renforcé mon engagement envers le développement de solutions technologiques qui favorisent la durabilité et l'efficacité."
+    ]
+  },
+  "gava": {
+    "titre": "Gava",
+    "img": "/images/logo/gava.png",
+    "description": "Gava est une application web développée en Java et Angular permettant d'organiser et de gérer des tournois de jeux vidéo, tout en intégrant une section dédiée à la sensibilisation au cyberharcèlement.",
+    "missions": [
+      "Le projet Gava a été commandité par Pierre GENTILLET, un gendarme au service Maison de Protection des Familles, dont la mission est de sensibiliser les jeunes aux dangers du cyberharcèlement. Passionné de jeux vidéo, il souhaitait combiner cette passion avec la sensibilisation au cyberharcèlement. Notre mission était de développer une plateforme web complète permettant aux joueurs de participer à des tournois de jeux vidéo, aux administrateurs de gérer ces tournois, et d'intégrer une section dédiée à la sensibilisation au cyberharcèlement. Cette approche novatrice visait à attirer un public jeune sur une plateforme ludique tout en leur transmettant des messages importants sur les risques liés au cyberharcèlement."
+    ],
+    "role": [
+      "En tant que Développeur sur ce projet, j'étais responsable de plusieurs composants clés de l'interface utilisateur. J'ai créé la barre de navigation et le bas de page incluant les sponsors, les informations de contact et les liens vers les réseaux sociaux. J'ai également développé la page d'administration des sponsors permettant l'ajout et la suppression de sponsors, ainsi que les interfaces administrateur pour modifier les informations de contact et les liens vers les réseaux sociaux. Une autre de mes contributions majeures a été le développement de la page des actualités et son interface d'administration, permettant de gérer dynamiquement le contenu du site."
+    ],
+    "technologies": [
+      "L'application a été développée en utilisant une architecture moderne avec Java pour le backend et la création d'une API RESTful, permettant une communication efficace entre le serveur et le client. Pour le frontend, nous avons utilisé Angular, un framework JavaScript robuste qui facilite la création d'interfaces utilisateur dynamiques et réactives. Cette combinaison technologique nous a permis de créer une application web performante et évolutive, capable de gérer efficacement les différentes fonctionnalités requises, notamment la gestion des tournois, l'authentification des utilisateurs et l'administration du contenu."
+    ],
+    "client": [
+      "Pierre GENTILLET, notre commanditaire, est un gendarme travaillant au service Maison de Protection des Familles, un organisme dédié à la sensibilisation des jeunes aux dangers du cyberharcèlement. Sa passion pour les jeux vidéo l'a amené à envisager une approche novatrice pour atteindre les jeunes, en combinant l'attrait des tournois de jeux vidéo avec des messages de prévention contre le cyberharcèlement. Cette vision unique a guidé le développement de notre application, visant à créer un environnement engageant où les jeunes peuvent s'amuser tout en étant sensibilisés à des problématiques importantes."
+    ],
+    "objectif": [
+      "L'objectif principal de Gava était de créer une plateforme complète pour l'organisation et la gestion de tournois de jeux vidéo, tout en intégrant une composante éducative sur le cyberharcèlement. L'application devait inclure une variété de fonctionnalités, notamment une page d'accueil accueillante, une section dédiée aux tournois avec des détails complets sur chaque événement, une page d'actualités pour tenir les utilisateurs informés, et une section spécifique pour la sensibilisation au cyberharcèlement. Les enjeux majeurs étaient de simplifier l'organisation des tournois pour réduire les erreurs et d'accorder une place importante à la sensibilisation au cyberharcèlement pour maximiser son impact, tout en proposant une interface attractive pour se démarquer des solutions concurrentes."
+    ],
+    "galerie": [
+      "Gava offre une interface utilisateur intuitive et complète. La page d'accueil présente un message de bienvenue et des liens vers les différentes sections du site. La page des tournois affiche les jeux disponibles et les tournois en cours, avec la possibilité de consulter les détails spécifiques de chaque tournoi, notamment l'arbre de compétition, la date, le format et le jeu concerné. Les utilisateurs peuvent créer un compte, configurer leur profil de joueur, créer ou rejoindre une équipe, et interagir avec d'autres membres. Une section de streaming Twitch est intégrée, permettant aux utilisateurs de regarder des diffusions en direct. Pour les administrateurs, un panneau de contrôle complet permet de gérer tous les aspects du site, des tournois aux utilisateurs, en passant par les actualités et les contenus de sensibilisation au cyberharcèlement."
+    ],
+    "processus": [
+      "Le développement de Gava a débuté par une réunion approfondie avec notre commanditaire pour comprendre précisément ses attentes. Nous avons ensuite adopté la méthodologie Agile pour définir les objectifs et les user stories, puis organisé notre travail en sprints. Des maquettes d'interface ont été créées et présentées au client pour validation avant le début du développement. Le processus de développement a suivi notre planification Agile, avec des tests réguliers après chaque fonctionnalité et sprint, et des réunions bimensuelles avec le client pour valider notre progression. La génération de l'arbre de tournoi s'est révélée être un défi particulier, nécessitant une attention spéciale pour garantir le bon fonctionnement du suivi des matchs et l'affichage adaptatif en fonction du nombre d'équipes."
+    ],
+    "conclusions": [
+      "Le projet Gava a été livré avec succès à Pierre GENTILLET, qui a exprimé sa satisfaction quant à la solution développée. En plus de l'application, nous avons fourni une documentation complète, incluant un manuel utilisateur, un manuel administrateur, un manuel technique et un manuel API pour faciliter la maintenance et l'évolution future du projet. Cette expérience m'a permis de découvrir le développement d'applications web et la création d'API, tout en approfondissant mes connaissances en gestion de projet Agile. La nécessité de découper les fonctionnalités en tâches managéables a été particulièrement formatrice, compte tenu de l'ampleur inattendue du projet. Bien que nous n'ayons pas de retour sur l'utilisation actuelle de l'application, la satisfaction de notre client témoigne de la qualité du travail fourni et de la pertinence de la solution dans le contexte de la sensibilisation au cyberharcèlement."
+    ]
+  },
+  "optivex": {
+    "titre": "Optivex",
+    "img": "/images/logo/optivex.jpg",
+    "description": "Optivex est une application mobile développée pour UPSA permettant de digitaliser et centraliser le suivi des livraisons de matières premières, remplaçant un système papier inefficace.",
+    "missions": [
+      "UPSA, une entreprise spécialisée dans la création de médicaments, cherchait à moderniser son système de suivi des livraisons de matières premières. Auparavant, ils utilisaient des fiches papier pour collecter les informations de transport, ce qui rendait difficile la gestion, le contrôle et la centralisation des données. Notre mission était de développer une application mobile intuitive pour collecter les informations de livraison, faciliter leur contrôle et permettre leur exportation dans un format exploitable, réduisant ainsi la consommation de papier et simplifiant la gestion des données."
+    ],
+    "role": [
+      "En tant que Développeur sur ce projet, j'étais responsable de la création du formulaire pour les livraisons, incluant le développement de l'interface de sélection des camions et la saisie des informations de transport. J'ai travaillé sur la première page du formulaire pour la sélection du camion, ainsi que sur la deuxième page permettant de renseigner les détails de livraison comme l'heure de départ, le trajet effectué, les matériaux livrés, l'heure d'arrivée, l'entreprise de livraison et les commentaires."
+    ],
+    "technologies": [
+      "L'application a été développée en utilisant Java avec Android Studio pour la création d'une interface native Android. Nous avons implémenté une base de données locale pour stocker les informations de livraison et développé des fonctionnalités d'exportation au format CSV pour permettre l'intégration avec les systèmes existants d'UPSA."
+    ],
+    "client": [
+      "UPSA est une entreprise pharmaceutique spécialisée dans la fabrication de médicaments. Leur processus de production nécessite des livraisons régulières de matières premières par camion, dont le suivi précis est essentiel pour leurs opérations. Leur engagement envers l'efficacité opérationnelle et la durabilité environnementale a motivé la transition d'un système papier vers une solution numérique."
+    ],
+    "objectif": [
+      "Le projet avait pour objectif de créer une interface intuitive permettant aux transporteurs de saisir rapidement et facilement les informations de livraison. Il était essentiel de standardiser la collecte des données pour assurer leur cohérence et leur compréhension par tous les utilisateurs. La solution devait également permettre l'exportation des données au format CSV pour faciliter leur exploitation par les équipes d'UPSA. Les enjeux principaux étaient l'optimisation du temps en éliminant la ressaisie manuelle des données et la réduction de l'empreinte écologique en remplaçant le format papier par une solution numérique."
+    ],
+    "galerie": [
+      "L'application se compose d'une interface simple et intuitive qui permet aux livreurs de sélectionner le camion utilisé, puis de remplir un formulaire détaillé incluant l'heure de départ, le trajet effectué, les matériaux livrés, l'heure d'arrivée, l'entreprise de livraison et des commentaires optionnels. Un historique des livraisons est accessible depuis le menu principal, permettant de consulter et de modifier les informations précédemment enregistrées. Des fonctionnalités d'exportation des données au format CSV et de gestion de l'historique complètent l'application, offrant une solution complète pour le suivi des livraisons."
+    ],
+    "processus": [
+      "Le développement d'Optivex a débuté par une phase d'analyse approfondie des besoins du client pour comprendre précisément leurs attentes et les enjeux du projet. Nous avons ensuite mis en place une gestion de projet utilisant la méthodologie Agile, définissant clairement les objectifs et les user stories à réaliser. Des maquettes d'interface ont été créées et rapidement présentées à UPSA pour validation, assurant que notre vision du projet correspondait à leurs attentes. Le développement a été organisé en sprints, avec des tests réguliers pour vérifier le bon fonctionnement de chaque fonctionnalité. Des réunions périodiques avec le client ont permis de valider les avancées et d'ajuster le développement si nécessaire, garantissant que le produit final répondrait parfaitement à leurs besoins."
+    ],
+    "conclusions": [
+      "Le projet Optivex a été livré avec succès à UPSA, qui a exprimé sa satisfaction quant à la solution développée. En plus de l'application, nous avons fourni une documentation complète, incluant un manuel utilisateur et un manuel technique destiné aux développeurs qui reprendraient le projet. Cette expérience m'a permis de découvrir le développement d'applications mobiles, d'améliorer mes compétences en Java et d'approfondir mes connaissances en gestion de projet Agile. Bien que nous aurions souhaité implémenter des fonctionnalités supplémentaires, le client a préféré que ces améliorations soient développées ultérieurement par une équipe interne. Ce projet illustre parfaitement comment la technologie peut transformer des processus traditionnels pour améliorer l'efficacité opérationnelle tout en contribuant à la durabilité environnementale."
+    ]
+  },
+  "todoapp": {
+    "titre": "TodoApp",
+    "img": "/images/logo/todoapp.png",
+    "description": "TodoApp est une application mobile et web développée avec Ionic React et TypeScript, offrant une gestion avancée de tâches avec synchronisation cross-platform, catégorisation et analyses de productivité.",
+    "missions": [
+      "Face aux nombreux outils de gestion de tâches disponibles mais souvent limités en fonctionnalités ou en personnalisation, j'ai décidé de créer ma propre solution. Mon objectif était de développer une application responsive et cross-platform qui me permettrait de gérer mes tâches sur tous mes appareils, tout en me permettant d'approfondir mes compétences en Ionic React et TypeScript. Cette application devait non seulement offrir les fonctionnalités classiques de gestion de tâches, mais aussi intégrer des analyses de productivité, un système de rappels, et une interface utilisateur intuitive et personnalisable."
+    ],
+    "role": [
+      "En tant que développeur unique sur ce projet personnel, j'ai eu la responsabilité complète de toutes les phases de développement, de la conception initiale au déploiement. J'ai créé l'architecture de l'application, développé l'interface utilisateur avec Ionic React, implémenté la logique de gestion des tâches, conçu la base de données locale et le système de synchronisation, et configuré le déploiement pour les plateformes web, iOS et Android."
+    ],
+    "technologies": [
+      "J'ai développé cette application en utilisant Ionic comme framework principal, avec React et TypeScript pour garantir une interface utilisateur performante et un code robuste. Pour la persistance des données, j'ai utilisé Capacitor avec SQLite pour le stockage local, et Firebase pour la synchronisation entre appareils. L'authentification est gérée via Firebase Authentication, permettant la connexion avec différentes méthodes. J'ai implémenté des fonctionnalités de PWA (Progressive Web App) pour offrir une expérience similaire à une application native sur le web. Pour assurer la qualité du code, j'ai utilisé ESLint et Prettier, et mis en place des tests avec Jest et React Testing Library."
+    ],
+    "client": [
+      "Ce projet étant personnel, j'en suis à la fois le créateur et l'utilisateur principal. Il a été conçu pour répondre à mes besoins spécifiques en matière de gestion de tâches quotidiennes et de projets, mais également pour servir de démonstration de mes compétences techniques en développement d'applications cross-platform avec Ionic React."
+    ],
+    "objectif": [
+      "L'objectif principal de TodoApp était de créer une application de gestion de tâches cross-platform avec une interface utilisateur intuitive et des fonctionnalités avancées rarement disponibles dans les solutions gratuites. Je souhaitais disposer d'un outil fonctionnant de manière cohérente sur tous mes appareils, avec synchronisation en temps réel et possibilité d'utilisation hors ligne. Ce projet me permettait également de mettre en pratique mes compétences en développement Ionic React et de tester l'efficacité de ce framework pour créer des applications hybrides performantes."
+    ],
+    "galerie": [
+      "TodoApp offre une interface utilisateur intuitive et élégante, adaptée à différentes tailles d'écran. La page principale affiche les tâches organisées par date d'échéance, avec un système de filtrage par catégories, priorités ou statut. Chaque tâche peut être enrichie avec une description détaillée, des pièces jointes, et des sous-tâches. L'application propose différentes vues comme la vue Aujourd'hui, Semaine, et Projets. Un tableau de bord intégré offre des visualisations de la productivité, permettant d'identifier les tendances et les moments de pic d'efficacité. Le mode sombre et plusieurs thèmes de couleur permettent une personnalisation selon les préférences de l'utilisateur. L'application fonctionne parfaitement hors ligne, avec synchronisation automatique dès qu'une connexion est disponible."
+    ],
+    "processus": [
+      "Le développement de TodoApp a débuté par une phase de conception où j'ai défini l'architecture générale, les fonctionnalités clés et l'expérience utilisateur souhaitée. J'ai créé des wireframes et maquettes pour visualiser l'interface avant de commencer le développement. J'ai ensuite mis en place la structure du projet Ionic React, en commençant par les composants de base et la navigation. J'ai développé progressivement les fonctionnalités, en commençant par la gestion locale des tâches, puis en ajoutant la synchronisation cloud, les notifications, et les analyses de productivité. J'ai accordé une attention particulière à l'expérience utilisateur, en optimisant les temps de chargement et en assurant une réactivité fluide sur différents appareils. Tout au long du développement, j'ai testé l'application sur diverses plateformes pour garantir une expérience cohérente."
+    ],
+    "conclusions": [
+      "Le développement de TodoApp m'a permis d'approfondir considérablement mes compétences en Ionic React et TypeScript, tout en explorant des concepts avancés comme la gestion d'état avec Redux, le stockage local avec Capacitor, et la synchronisation cloud avec Firebase. J'ai particulièrement apprécié la flexibilité d'Ionic et sa capacité à créer des applications vraiment cross-platform avec une base de code unique. Ce projet m'a également donné l'occasion de mettre en pratique les principes de conception d'interface utilisateur responsive et d'optimisation des performances sur mobile. Sur le plan personnel, disposer d'une application de gestion de tâches entièrement personnalisable m'a permis d'améliorer significativement ma productivité quotidienne. À l'avenir, j'envisage d'étendre l'application avec des fonctionnalités d'intégration à d'autres services et des capacités d'intelligence artificielle pour suggérer des priorités de tâches."
+    ]
+  }
+}
