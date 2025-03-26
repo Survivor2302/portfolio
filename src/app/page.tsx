@@ -1,44 +1,71 @@
-import Card from "@/components/card";
+"use client";
+import { useRouter } from "next/navigation";
 import CardRealisations from "@/components/card-realisations";
+import CompetenceSection, {
+  CompetenceType,
+} from "@/components/CompetenceSection";
 import { Code, FolderOpen } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+
 export default function Home() {
+  const router = useRouter();
+
   return (
     <main className="scroll-smooth overflow-auto mb-28">
-      <section className="pt-36 pb-24 md:px-28 px-8 bg-gray-50">
-        <h1 className=" text-center text-4xl bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold">
-          Étudiant et développeur freelance
-        </h1>
-        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <Link
-            className="px-6 py-2 flex gap-2 bg-gradient-to-r from-pink-light to-purple-light  text-white  font-bold rounded-md hover:scale-105 transition-all duration-100"
-            href="#qui-suis-je"
-          >
-            <Code className="w-4" />
-            Présentation
-          </Link>
-          <Link
-            className="px-6 py-2 flex gap-2 bg-gradient-to-r from-pink-light to-purple-light  text-white  font-bold rounded-md hover:scale-105 transition-all duration-100"
-            href="#parcours"
-          >
-            <Code className="w-4" />
-            Parcours
-          </Link>
-          <Link
-            className="px-6 py-2 flex gap-2 bg-gradient-to-r from-pink-light to-purple-light  text-white  font-bold rounded-md hover:scale-105 transition-all duration-100"
-            href="#realisations"
-          >
-            <FolderOpen className="w-4" />
-            Réalisations
-          </Link>
-          <Link
-            className="px-6 py-2 flex gap-2 bg-gradient-to-r from-pink-light to-purple-light  text-white  font-bold rounded-md hover:scale-105 transition-all duration-100"
-            href="#competences"
-          >
-            <Code className="w-4" />
-            Compétences
-          </Link>
+      <section className="pt-36 pb-24 md:px-28 px-8 bg-gray-50 relative overflow-hidden">
+        {/* Formes décoratives */}
+        <div className="absolute inset-0 overflow-hidden">
+          {/* Cercle rose en haut à gauche */}
+          <div className="absolute top-20 -left-10 w-64 h-64 rounded-full bg-gradient-to-r from-pink-light/20 to-purple-light/20 blur-2xl" />
+
+          {/* Cercle violet en bas à droite */}
+          <div className="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-gradient-to-r from-purple-light/20 to-pink-light/20 blur-2xl" />
+
+          {/* Cercle central */}
+          <div className="absolute top-40 right-1/3 w-72 h-72 rounded-full bg-gradient-to-r from-pink-light/15 to-purple-light/15 blur-2xl" />
+
+          {/* Formes supplémentaires */}
+          <div className="absolute top-1/2 left-1/4 w-48 h-48 rotate-45 bg-gradient-to-tr from-pink-light/10 to-purple-light/10 blur-2xl" />
+
+          {/* Forme ondulée */}
+          <div className="absolute bottom-20 left-1/3 w-96 h-32 bg-gradient-to-r from-purple-light/15 to-pink-light/15 blur-2xl transform -rotate-12" />
+        </div>
+
+        {/* Contenu existant */}
+        <div className="relative z-10">
+          <h1 className="text-center text-4xl bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold">
+            Étudiant et développeur freelance
+          </h1>
+          <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
+            <button
+              className="px-6 py-2 flex gap-2 bg-gradient-to-r from-pink-light to-purple-light  text-white  font-bold rounded-md hover:scale-105 transition-all duration-100"
+              onClick={() => router.push("/#qui-suis-je")}
+            >
+              <Code className="w-4" />
+              Présentation
+            </button>
+            <button
+              className="px-6 py-2 flex gap-2 bg-gradient-to-r from-pink-light to-purple-light  text-white  font-bold rounded-md hover:scale-105 transition-all duration-100"
+              onClick={() => router.push("/#parcours")}
+            >
+              <Code className="w-4" />
+              Parcours
+            </button>
+            <button
+              className="px-6 py-2 flex gap-2 bg-gradient-to-r from-pink-light to-purple-light  text-white  font-bold rounded-md hover:scale-105 transition-all duration-100"
+              onClick={() => router.push("/#realisations")}
+            >
+              <FolderOpen className="w-4" />
+              Réalisations
+            </button>
+            <button
+              className="px-6 py-2 flex gap-2 bg-gradient-to-r from-pink-light to-purple-light  text-white  font-bold rounded-md hover:scale-105 transition-all duration-100"
+              onClick={() => router.push("/#competences")}
+            >
+              <Code className="w-4" />
+              Compétences
+            </button>
+          </div>
         </div>
       </section>
       <section id="qui-suis-je" className="mb-24 md:px-28 px-8 pt-24">
@@ -249,79 +276,17 @@ export default function Home() {
       <hr className="border-0 h-1 bg-gradient-to-r from-pink-light to-purple-light mx-28" />
 
       <section id="competences" className="mb-24 md:px-28 px-8 pt-24">
-        <h1 className=" text-center text-3xl font-bold bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent">
+        <h1 className="text-center text-3xl font-bold bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent">
           Compétences
         </h1>
-        <div className="flex flex-col items-center gap-8 mt-2">
-          <h2 className="text-xl text-start font-bold mt-8 ">Techniques</h2>
-          <div className="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-8 mt-2">
-            <Card
-              img="/images/git.png"
-              titre="Git"
-              href="/competences/techniques/git"
-              text="Git est un système de contrôle..."
-            />
-            <Card
-              img="/images/typescript.png"
-              titre="Typescript"
-              href="/competences/techniques/typescript"
-              text="Git est un système de contrôle..."
-            />
-            <Card
-              img="/images/kubernetes.png"
-              titre="Kubernetes"
-              href="/competences/techniques/kubernetes"
-              text="Git est un système de contrôle..."
-            />
-            <Card
-              img="/images/java.png"
-              titre="Java"
-              href="/competences/techniques/java"
-              text="Git est un système de contrôle..."
-            />
-            <Card
-              img="/images/docker.png"
-              titre="Docker"
-              href="/competences/techniques/docker"
-              text="Git est un système de contrôle..."
-            />
-          </div>
-        </div>
-        <div className="flex flex-col items-center gap-8 mt-12">
-          <h2 className="text-xl text-start font-bold mt-8 ">Humaines</h2>
-          <div className="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-8 mt-2">
-            <Card
-              img="/images/adaptabilite.png"
-              titre="Adaptabilité"
-              href="/competences/humaines/adaptabilite"
-              text="Git est un système de contrôle..."
-            />
-            <Card
-              img="/images/anglais.png"
-              titre="Anglais"
-              href="/competences/humaines/anglais"
-              text="Git est un système de contrôle..."
-            />
-            <Card
-              img="/images/autonomie.png"
-              titre="Autonomie"
-              href="/competences/humaines/autonomie"
-              text="Git est un système de contrôle..."
-            />
-            <Card
-              img="/images/flexibilite.png"
-              titre="Flexibilité"
-              href="/competences/humaines/flexibilite"
-              text="Git est un système de contrôle..."
-            />
-            <Card
-              img="/images/pensee.png"
-              titre="Pensée critique"
-              href="/competences/humaines/pensee-critique"
-              text="Git est un système de contrôle..."
-            />
-          </div>
-        </div>
+        <CompetenceSection
+          title="Techniques"
+          competenceType={CompetenceType.TECHNIQUES}
+        />
+        <CompetenceSection
+          title="Humaines"
+          competenceType={CompetenceType.HUMAINES}
+        />
       </section>
     </main>
   );

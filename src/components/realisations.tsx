@@ -4,11 +4,12 @@ import {
   HeartHandshake,
   Laptop,
   PencilLine,
-  Rocket,
   ShieldEllipsis,
   ShoppingCart,
 } from "lucide-react";
 import Image from "next/image";
+import CompetenceSection from "./CompetenceSection";
+import { CompetenceType, CompetenceKey } from "./CompetenceSection";
 
 type Props = {
   title: string;
@@ -20,7 +21,10 @@ type Props = {
   galerie: string[];
   processus: string[];
   conclusions: string[];
-
+  associatedCompetences: {
+    techniques: CompetenceKey[];
+    humaines: CompetenceKey[];
+  };
   img: string;
 };
 
@@ -34,6 +38,7 @@ export default function Realisations({
   galerie,
   processus,
   conclusions,
+  associatedCompetences,
   img,
 }: Props) {
   return (
@@ -161,22 +166,26 @@ export default function Realisations({
                   Conclusion
                 </h2>
               </div>
-              {processus.map((text, index) => (
+              {conclusions.map((text, index) => (
                 <p key={index}>{text}</p>
               ))}
             </div>
           </div>
 
-          <div className="flex flex-col  gap-8">
-            <div className="flex gap-2 items-center">
-              <Rocket className="w-5" />
-              <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text font-bold  text-transparent">
-                Compétences associées
-              </h2>
-            </div>
-            {conclusions.map((text, index) => (
-              <p key={index}>{text}</p>
-            ))}
+          <div className="flex flex-col gap-8">
+            <CompetenceSection
+              title="Compétences associées"
+              competences={[
+                ...associatedCompetences.techniques.map((key) => ({
+                  key: key as CompetenceKey,
+                  type: CompetenceType.TECHNIQUES,
+                })),
+                ...associatedCompetences.humaines.map((key) => ({
+                  key: key as CompetenceKey,
+                  type: CompetenceType.HUMAINES,
+                })),
+              ]}
+            />
           </div>
         </section>
       </section>

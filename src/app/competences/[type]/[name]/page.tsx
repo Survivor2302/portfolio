@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 interface Competence {
   logo: string;
   title: string;
+  level: number;
   presentation: string[];
   utilisations: string[];
   maitrise: string[];

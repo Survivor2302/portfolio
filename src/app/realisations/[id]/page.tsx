@@ -13,6 +13,10 @@ interface RealisationData {
   galerie: string[];
   processus: string[];
   conclusions: string[];
+  associatedCompetences: {
+    techniques: CompetenceKey[];
+    humaines: CompetenceKey[];
+  };
 }
 
 interface RealisationsData {
@@ -22,6 +26,7 @@ interface RealisationsData {
 import realisationsData from "@/data/realisations.json";
 const typedRealisationsData = realisationsData as RealisationsData;
 import Realisations from "@/components/realisations";
+import { CompetenceKey } from "@/components/CompetenceSection";
 
 export function generateStaticParams() {
   return Object.keys(realisationsData).map((id) => ({ id }));
@@ -55,6 +60,7 @@ export default async function RealisationPage({
           galerie={realisation.galerie}
           processus={realisation.processus}
           conclusions={realisation.conclusions}
+          associatedCompetences={realisation.associatedCompetences}
         />
       </section>
     </main>

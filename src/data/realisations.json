@@ -27,7 +27,11 @@
     ],
     "conclusions": [
       "Le projet Vidibio a été une aventure technologique et professionnelle extrêmement enrichissante. Il a non seulement permis de mettre en œuvre des solutions technologiques avancées pour répondre à des défis environnementaux complexes mais a aussi offert une plateforme pour affiner mes compétences en développement full-stack. La collaboration étroite avec Vidibio et leur engagement envers l'innovation ont été cruciaux pour le succès du projet. Ce projet a démontré l'importance cruciale de la technologie dans la transformation des pratiques agricoles et a renforcé mon engagement envers le développement de solutions technologiques qui favorisent la durabilité et l'efficacité."
-    ]
+    ],
+    "associatedCompetences": {
+      "techniques": ["kubernetes", "docker"],
+      "humaines": ["autonomie", "adaptabilite"]
+    }
   },
   "gava": {
     "titre": "Gava",
@@ -56,7 +60,11 @@
     ],
     "conclusions": [
       "Le projet Gava a été livré avec succès à Pierre GENTILLET, qui a exprimé sa satisfaction quant à la solution développée. En plus de l'application, nous avons fourni une documentation complète, incluant un manuel utilisateur, un manuel administrateur, un manuel technique et un manuel API pour faciliter la maintenance et l'évolution future du projet. Cette expérience m'a permis de découvrir le développement d'applications web et la création d'API, tout en approfondissant mes connaissances en gestion de projet Agile. La nécessité de découper les fonctionnalités en tâches managéables a été particulièrement formatrice, compte tenu de l'ampleur inattendue du projet. Bien que nous n'ayons pas de retour sur l'utilisation actuelle de l'application, la satisfaction de notre client témoigne de la qualité du travail fourni et de la pertinence de la solution dans le contexte de la sensibilisation au cyberharcèlement."
-    ]
+    ],
+    "associatedCompetences": {
+      "techniques": ["java", "git"],
+      "humaines": ["pensee", "flexibilite"]
+    }
   },
   "optivex": {
     "titre": "Optivex",
@@ -85,7 +93,11 @@
     ],
     "conclusions": [
       "Le projet Optivex a été livré avec succès à UPSA, qui a exprimé sa satisfaction quant à la solution développée. En plus de l'application, nous avons fourni une documentation complète, incluant un manuel utilisateur et un manuel technique destiné aux développeurs qui reprendraient le projet. Cette expérience m'a permis de découvrir le développement d'applications mobiles, d'améliorer mes compétences en Java et d'approfondir mes connaissances en gestion de projet Agile. Bien que nous aurions souhaité implémenter des fonctionnalités supplémentaires, le client a préféré que ces améliorations soient développées ultérieurement par une équipe interne. Ce projet illustre parfaitement comment la technologie peut transformer des processus traditionnels pour améliorer l'efficacité opérationnelle tout en contribuant à la durabilité environnementale."
-    ]
+    ],
+    "associatedCompetences": {
+      "techniques": ["java"],
+      "humaines": ["anglais", "pensee"]
+    }
   },
   "todoapp": {
     "titre": "TodoApp",
@@ -114,6 +126,27 @@
     ],
     "conclusions": [
       "Le développement de TodoApp m'a permis d'approfondir considérablement mes compétences en Ionic React et TypeScript, tout en explorant des concepts avancés comme la gestion d'état avec Redux, le stockage local avec Capacitor, et la synchronisation cloud avec Firebase. J'ai particulièrement apprécié la flexibilité d'Ionic et sa capacité à créer des applications vraiment cross-platform avec une base de code unique. Ce projet m'a également donné l'occasion de mettre en pratique les principes de conception d'interface utilisateur responsive et d'optimisation des performances sur mobile. Sur le plan personnel, disposer d'une application de gestion de tâches entièrement personnalisable m'a permis d'améliorer significativement ma productivité quotidienne. À l'avenir, j'envisage d'étendre l'application avec des fonctionnalités d'intégration à d'autres services et des capacités d'intelligence artificielle pour suggérer des priorités de tâches."
-    ]
+    ],
+    "associatedCompetences": {
+      "techniques": ["typescript", "git"],
+      "humaines": ["autonomie", "adaptabilite"]
+    }
+  },
+  "theseus": {
+    "titre": "Theseus",
+    "img": "/images/logo/theseus.png",
+    "description": "",
+    "missions": [""],
+    "role": [""],
+    "technologies": [""],
+    "client": [""],
+    "objectif": [""],
+    "galerie": [""],
+    "processus": [""],
+    "conclusions": [""],
+    "associatedCompetences": {
+      "techniques": ["docker", "kubernetes", "typescript"],
+      "humaines": ["anglais", "flexibilite"]
+    }
   }
 }

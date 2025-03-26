@@ -1,6 +1,6 @@
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 type Props = {
   href: string;
@@ -19,6 +19,7 @@ export default function CardRealisations({
   position,
   showDivider,
 }: Props) {
+  const router = useRouter();
   return (
     <>
       <section className="px-2 py-2 flex flex-col md:flex-row items-start gap-12 w-full">
@@ -34,13 +35,15 @@ export default function CardRealisations({
         <div className="flex flex-col gap-2 w-full  ">
           <h3 className="mt-2 font-bold truncate text-xl">{titre}</h3>
           <p className=" text-gray-500 ">{text}</p>
-          <Link
-            href={href}
+          <button
+            onClick={() => {
+              router.push(href);
+            }}
             className="px-6 items-center py-2 flex gap-2 bg-gradient-to-r from-pink-light to-purple-light  text-white  font-bold rounded-md w-fit "
           >
             En savoir plus
             <MoveRight className="w-5" />
-          </Link>
+          </button>
         </div>
         {position === "right" && (
           <Image
