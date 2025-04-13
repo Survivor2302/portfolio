@@ -1,7 +1,9 @@
 {
   "vidibio": {
     "titre": "Vidibio",
-    "img": "/images/veigar.jpg",
+    "img": "/images/logo/inria.jpg",
+    "previewPicture": "/images/mockup/vidibio.png",
+    "preview": "Application mobile innovante pour scanner et analyser les haies agricoles, développée en collaboration avec une startup agritech pour promouvoir une agriculture durable.",
     "description": "Vidibio est une application mobile qui permet de scanner des haies et de collecter des données détaillées sur la biodiversité et la biomasse.",
     "missions": [
       "Vidibio, une startup avant-gardiste dans le domaine de la technologie agricole, se consacre à révolutionner les pratiques agricoles par le biais de solutions technologiques innovantes. Notre mission était de concevoir et développer une application mobile et une API qui permettraient aux agriculteurs et aux techniciens agricoles de scanner des haies, de collecter des données détaillées sur la biomasse et la biodiversité, et de fournir des analyses précises pour une gestion optimale des ressources naturelles. Cette initiative visait à promouvoir une agriculture plus durable et écologiquement responsable, en utilisant la technologie pour améliorer la qualité et la précision des informations environnementales disponibles."
@@ -36,6 +38,8 @@
   "gava": {
     "titre": "Gava",
     "img": "/images/logo/gava.png",
+    "previewPicture": "/images/mockup/gava.png",
+    "preview": "Plateforme web combinant l'organisation de tournois de jeux vidéo avec la sensibilisation au cyberharcèlement, développée en partenariat avec la Maison de Protection des Familles.",
     "description": "Gava est une application web développée en Java et Angular permettant d'organiser et de gérer des tournois de jeux vidéo, tout en intégrant une section dédiée à la sensibilisation au cyberharcèlement.",
     "missions": [
       "Le projet Gava a été commandité par Pierre GENTILLET, un gendarme au service Maison de Protection des Familles, dont la mission est de sensibiliser les jeunes aux dangers du cyberharcèlement. Passionné de jeux vidéo, il souhaitait combiner cette passion avec la sensibilisation au cyberharcèlement. Notre mission était de développer une plateforme web complète permettant aux joueurs de participer à des tournois de jeux vidéo, aux administrateurs de gérer ces tournois, et d'intégrer une section dédiée à la sensibilisation au cyberharcèlement. Cette approche novatrice visait à attirer un public jeune sur une plateforme ludique tout en leur transmettant des messages importants sur les risques liés au cyberharcèlement."
@@ -69,6 +73,8 @@
   "optivex": {
     "titre": "Optivex",
     "img": "/images/logo/optivex.jpg",
+    "previewPicture": "/images/mockup/optivex.png",
+    "preview": "Application mobile de digitalisation du suivi des livraisons pour UPSA, transformant un processus papier en solution numérique efficace et écologique.",
     "description": "Optivex est une application mobile développée pour UPSA permettant de digitaliser et centraliser le suivi des livraisons de matières premières, remplaçant un système papier inefficace.",
     "missions": [
       "UPSA, une entreprise spécialisée dans la création de médicaments, cherchait à moderniser son système de suivi des livraisons de matières premières. Auparavant, ils utilisaient des fiches papier pour collecter les informations de transport, ce qui rendait difficile la gestion, le contrôle et la centralisation des données. Notre mission était de développer une application mobile intuitive pour collecter les informations de livraison, faciliter leur contrôle et permettre leur exportation dans un format exploitable, réduisant ainsi la consommation de papier et simplifiant la gestion des données."
@@ -102,6 +108,8 @@
   "todoapp": {
     "titre": "TodoApp",
     "img": "/images/logo/todoapp.png",
+    "previewPicture": "/images/mockup/todoapp.png",
+    "preview": "Application cross-platform de gestion de tâches avancée, offrant synchronisation en temps réel, analyses de productivité et une expérience utilisateur personnalisable.",
     "description": "TodoApp est une application mobile et web développée avec Ionic React et TypeScript, offrant une gestion avancée de tâches avec synchronisation cross-platform, catégorisation et analyses de productivité.",
     "missions": [
       "Face aux nombreux outils de gestion de tâches disponibles mais souvent limités en fonctionnalités ou en personnalisation, j'ai décidé de créer ma propre solution. Mon objectif était de développer une application responsive et cross-platform qui me permettrait de gérer mes tâches sur tous mes appareils, tout en me permettant d'approfondir mes compétences en Ionic React et TypeScript. Cette application devait non seulement offrir les fonctionnalités classiques de gestion de tâches, mais aussi intégrer des analyses de productivité, un système de rappels, et une interface utilisateur intuitive et personnalisable."
@@ -135,15 +143,33 @@
   "theseus": {
     "titre": "Theseus",
     "img": "/images/logo/theseus.png",
-    "description": "",
-    "missions": [""],
-    "role": [""],
-    "technologies": [""],
-    "client": [""],
-    "objectif": [""],
-    "galerie": [""],
-    "processus": [""],
-    "conclusions": [""],
+    "previewPicture": "/images/mockup/theseus.png",
+    "preview": "Application web et mobile innovante proposant des services d'enregistrement et de transcription automatique de réunions via Teams, Google Meet, Zoom ou dictaphone, avec analyse IA des conversations pour faciliter la prise de décision.",
+    "description": "Theseus est une plateforme complète permettant l'enregistrement et l'analyse automatisée des réunions virtuelles, avec une infrastructure scalable basée sur Kubernetes et des fonctionnalités avancées de traitement audio.",
+    "missions": [
+      "Theseus est une solution innovante visant à révolutionner la gestion des réunions virtuelles. Notre mission était de développer une plateforme permettant d'enregistrer automatiquement les réunions sur différentes plateformes (Teams, Google Meet, Zoom, Zoho) via des bots, tout en offrant des fonctionnalités avancées d'analyse et de transcription. L'objectif était de fournir aux utilisateurs un outil complet pour capturer, analyser et exploiter le contenu de leurs réunions, facilitant ainsi la prise de décision et le suivi des échanges."
+    ],
+    "role": [
+      "En tant que Développeur Backend, j'étais principalement responsable du développement de l'API et de la gestion des bots d'enregistrement. Mon rôle incluait la conception et l'implémentation de l'architecture backend avec NestJS, la gestion des bots d'enregistrement avec Puppeteer, et la mise en place de l'infrastructure Kubernetes pour le scaling automatique. J'ai également travaillé sur la diarization (détection des interlocuteurs) et la gestion du stockage des enregistrements sur AWS S3."
+    ],
+    "technologies": [
+      "Le projet a été développé avec une architecture moderne utilisant NextJS pour le frontend et NestJS pour le backend. Les bots d'enregistrement ont été implémentés avec Puppeteer pour interagir avec les différentes plateformes de visioconférence. L'infrastructure est basée sur Kubernetes pour le scaling automatique, avec une machine dédiée par enregistrement. AWS a été utilisé pour l'hébergement des clusters Kubernetes et le stockage des enregistrements dans des buckets S3. La diarization et l'analyse des conversations ont été implémentées avec des services d'IA spécialisés."
+    ],
+    "client": [
+      "Theseus est une startup innovante dans le domaine de l'analyse de réunions virtuelles, visant à améliorer la productivité et la traçabilité des échanges professionnels. Leur vision était de créer une solution complète qui s'intègre parfaitement dans l'écosystème des outils de visioconférence existants."
+    ],
+    "objectif": [
+      "L'objectif principal était de créer une plateforme fiable et scalable permettant l'enregistrement automatique des réunions sur différentes plateformes, avec une analyse approfondie du contenu. Les enjeux techniques majeurs incluaient la maintenance quotidienne des bots face aux mises à jour des interfaces des plateformes, la garantie de ne jamais perdre d'enregistrements, et la gestion efficace du scaling des ressources pour supporter un grand nombre d'enregistrements simultanés. La solution devait également offrir une expérience utilisateur fluide et des analyses pertinentes pour faciliter la prise de décision."
+    ],
+    "galerie": [
+      "L'application offre une interface utilisateur intuitive permettant de configurer les enregistrements, de visualiser les transcriptions et d'accéder aux analyses. Les utilisateurs peuvent programmer des enregistrements automatiques, configurer les bots pour différentes plateformes, et accéder à des visualisations détaillées des conversations. Le système de diarization permet d'identifier clairement les différents interlocuteurs, et les analyses fournissent des insights sur les sujets abordés et les décisions prises."
+    ],
+    "processus": [
+      "Le développement de Theseus a commencé par une phase d'analyse approfondie des différentes plateformes de visioconférence et de leurs APIs. Nous avons ensuite mis en place l'architecture backend avec NestJS et développé les bots d'enregistrement avec Puppeteer. L'infrastructure Kubernetes a été configurée pour assurer le scaling automatique, avec des tests rigoureux pour garantir la fiabilité du système. Le processus incluait des mises à jour régulières des bots pour s'adapter aux changements des interfaces des plateformes, et l'implémentation de mécanismes de sauvegarde redondants pour garantir la sécurité des enregistrements."
+    ],
+    "conclusions": [
+      "Le projet Theseus a été une expérience technique extrêmement enrichissante, combinant des défis complexes en termes d'automatisation, de scaling et de fiabilité. La maintenance quotidienne des bots a été particulièrement formatrice, nécessitant une veille constante sur les évolutions des plateformes. L'utilisation de Kubernetes et d'AWS a permis de mettre en place une infrastructure robuste et scalable. Ce projet a renforcé mes compétences en développement backend, en automatisation et en gestion d'infrastructure cloud, tout en démontrant l'importance d'une architecture résiliente pour des applications critiques."
+    ],
     "associatedCompetences": {
       "techniques": ["docker", "kubernetes", "typescript"],
       "humaines": ["anglais", "flexibilite"]

@@ -6,6 +6,7 @@ import CompetenceSection, {
 } from "@/components/CompetenceSection";
 import { Code, FolderOpen } from "lucide-react";
 import Image from "next/image";
+import realisationsData from "@/data/realisations.json";
 
 export default function Home() {
   const router = useRouter();
@@ -225,51 +226,21 @@ export default function Home() {
       <hr className="border-0 h-1 bg-gradient-to-r from-pink-light to-purple-light mx-28" />
 
       <section id="realisations" className="mb-24 md:px-28 px-8 pt-24">
-        <h1 className=" text-center text-3xl font-bold bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent">
+        <h1 className="text-center text-3xl font-bold bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent">
           Réalisations
         </h1>
         <div className="mt-20 flex flex-col gap-8">
-          <CardRealisations
-            img="/images/mockup-leo.png"
-            titre="Theseus"
-            href="/realisations/theseus"
-            text="In capital markets, every detail counts, and every second too. Yet, we are not machines and must be assisted by machines : Theseus refines data from your conversations to keep you focused, informed and relevant."
-            position="left"
-            showDivider={true}
-          />
-
-          <CardRealisations
-            img="/images/mockup-leo.png"
-            titre="Theseus"
-            href="/realisations/theseus"
-            text="In capital markets, every detail counts, and every second too. Yet, we are not machines and must be assisted by machines : Theseus refines data from your conversations to keep you focused, informed and relevant."
-            position="right"
-            showDivider={true}
-          />
-          <CardRealisations
-            img="/images/mockup-leo.png"
-            titre="Theseus"
-            href="/realisations/theseus"
-            text="In capital markets, every detail counts, and every second too. Yet, we are not machines and must be assisted by machines : Theseus refines data from your conversations to keep you focused, informed and relevant."
-            position="left"
-            showDivider={true}
-          />
-          <CardRealisations
-            img="/images/mockup-leo.png"
-            titre="Theseus"
-            href="/realisations/theseus"
-            text="In capital markets, every detail counts, and every second too. Yet, we are not machines and must be assisted by machines : Theseus refines data from your conversations to keep you focused, informed and relevant."
-            position="right"
-            showDivider={true}
-          />
-          <CardRealisations
-            img="/images/mockup-leo.png"
-            titre="Theseus"
-            href="/realisations/theseus"
-            text="In capital markets, every detail counts, and every second too. Yet, we are not machines and must be assisted by machines : Theseus refines data from your conversations to keep you focused, informed and relevant."
-            position="left"
-            showDivider={false}
-          />
+          {Object.entries(realisationsData).map(([key, project], index) => (
+            <CardRealisations
+              key={key}
+              img={project.previewPicture}
+              titre={project.titre}
+              href={`/realisations/${key}`}
+              text={project.preview}
+              position={index % 2 === 0 ? "left" : "right"}
+              showDivider={index !== Object.keys(realisationsData).length - 1}
+            />
+          ))}
         </div>
       </section>
 

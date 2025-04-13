@@ -24,13 +24,15 @@ export default function CardRealisations({
     <>
       <section className="px-2 py-2 flex flex-col md:flex-row items-start gap-12 w-full">
         {position === "left" && (
-          <Image
-            src={img}
-            alt=""
-            width={200}
-            height={200}
-            className="max-w-72 w-full h-full"
-          />
+          <div className="w-[260px] h-[195px] flex items-center justify-center">
+            <Image
+              src={img}
+              alt=""
+              width={260}
+              height={195}
+              className="max-w-[260px] max-h-[195px] object-contain rounded-lg"
+            />
+          </div>
         )}
         <div className="flex flex-col gap-2 w-full  ">
           <h3 className="mt-2 font-bold truncate text-xl">{titre}</h3>
@@ -46,13 +48,15 @@ export default function CardRealisations({
           </button>
         </div>
         {position === "right" && (
-          <Image
-            src={img}
-            alt=""
-            width={100}
-            height={100}
-            className="max-w-72 w-full h-full"
-          />
+          <div className="w-[260px] h-[195px] flex items-center justify-center">
+            <Image
+              src={img}
+              alt=""
+              width={260}
+              height={195}
+              className="max-w-[260px] max-h-[195px] object-contain rounded-lg"
+            />
+          </div>
         )}
       </section>
       {showDivider && <div className="w-full h-[1px] bg-gray-300 my-2" />}
