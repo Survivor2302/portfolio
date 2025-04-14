@@ -4,6 +4,7 @@
       "logo": "/images/docker.png",
       "title": "Docker",
       "level": 4,
+      "associatedRealisations": ["vidibio", "theseus"],
       "content": {
         "presentation": "Docker est une plateforme open-source qui permet de développer, expédier et exécuter des applications à l'aide de conteneurs. Ces derniers encapsulent une application et toutes ses dépendances, garantissant ainsi qu'elle fonctionne de manière identique, quel que soit l'environnement d'exécution. Docker est devenu un outil incontournable pour les développeurs et les équipes DevOps, car il simplifie la gestion des environnements, améliore la portabilité des applications et accélère les cycles de déploiement.",
         "utilisations": "J'ai largement utilisé Docker dans plusieurs projets professionnels pour optimiser le développement et le déploiement d'applications. Par exemple, dans le cadre du projet Vidibio, j'ai dockerisé différentes APIs Python et Python FastAPI pour faciliter leur déploiement. L'utilisation de Docker a permis d'uniformiser les environnements, réduisant ainsi les erreurs dues aux configurations locales. Dans le projet Theseus-AI, Docker a également été au centre de l'architecture. J'ai utilisé des conteneurs pour exécuter les différentes APIs et Docker Compose pour les connecter sur un même réseau. Cela a permis de créer un environnement de développement identique à celui du serveur de production, facilitant le travail sur les bots Puppeteer et garantissant une transition fluide vers la mise en production.",
@@ -18,6 +19,7 @@
       "logo": "/images/git.png",
       "title": "Git",
       "level": 5,
+      "associatedRealisations": ["gava", "todoapp"],
       "content": {
         "presentation": "Git est un système de contrôle de version distribué largement utilisé pour suivre les modifications de fichiers dans le développement de logiciels. Il a été créé par Linus Torvalds en 2005 pour gérer le développement du noyau Linux. Git permet à plusieurs développeurs de collaborer sur des projets, de fusionner des modifications et de suivre l'historique des versions. Grâce à son modèle distribué, chaque développeur possède une copie complète du dépôt, ce qui améliore la résilience et la flexibilité du développement. Git offre également des fonctionnalités comme les branches, les fusions et les remises, qui facilitent la gestion des différentes versions du code.",
         "utilisations": "J'ai commencé à utiliser Git dès mes premiers projets professionnels pour assurer le suivi des modifications et faciliter la collaboration en équipe. Lors du projet Gava, Git a été essentiel pour gérer les différentes fonctionnalités en parallèle grâce aux branches. Dans le cadre de Vidibio, j'ai utilisé Git pour synchroniser les développements avec l'équipe backend, tout en assurant une intégration continue grâce à des pipelines automatisés. Enfin, pour Theseus-AI, j'ai contribué à la mise en place de workflows Git avancés pour gérer les versions, les revues de code et les déploiements sur différentes environnements.",
@@ -32,6 +34,7 @@
       "logo": "/images/java.png",
       "title": "Java",
       "level": 3,
+      "associatedRealisations": ["gava", "optivex"],
       "content": {
         "presentation": "Java est un langage de programmation orienté objet, robuste et polyvalent, créé par Sun Microsystems en 1995 et désormais maintenu par Oracle. Connu pour sa portabilité, Java fonctionne sur le principe du 'Write Once, Run Anywhere' (WORA), ce qui signifie qu'un programme écrit en Java peut s'exécuter sur n'importe quelle plateforme dotée de la machine virtuelle Java (JVM). Le langage est utilisé dans de nombreux domaines, allant des applications mobiles et web aux systèmes embarqués et logiciels d'entreprise. Grâce à sa richesse en bibliothèques et frameworks, Java permet aux développeurs de concevoir des applications fiables, sécurisées et performantes.",
         "utilisations": "Java a été une compétence clé dans plusieurs de mes projets professionnels. Dans le cadre du projet Vidibio, une application mobile développée en React Native, j'ai créé un module natif pour Android en Java afin d'intégrer les fonctionnalités d'ARCore, permettant de scanner et d'analyser les haies bocagères avec précision. Ce module a été essentiel pour exploiter pleinement les capacités de réalité augmentée sur la plateforme Android. Dans le projet Gava, Java a été utilisé côté back-end pour développer une API Java EE qui gérait les données du site web, notamment l'authentification des utilisateurs, la gestion des joueurs et l'organisation des tournois. Cette API a permis d'assurer une communication fluide et sécurisée entre le front-end et le serveur, tout en garantissant la scalabilité du système. Enfin, pour le projet Optivex, j'ai contribué au développement d'une application mobile destinée à UPSA. Cette application a été conçue pour informatiser le suivi logistique des livraisons internes par camions et livreurs. L'implémentation en Java a permis de structurer efficacement le suivi des données et d'optimiser les processus logistiques en temps réel.",
@@ -46,6 +49,7 @@
       "logo": "/images/kubernetes.png",
       "title": "Kubernetes",
       "level": 4,
+      "associatedRealisations": ["vidibio", "theseus"],
       "content": {
         "presentation": "Kubernetes est une plateforme open-source conçue pour automatiser le déploiement, la mise à l'échelle et la gestion des applications conteneurisées. Créée par Google, Kubernetes est devenue une référence incontournable pour orchestrer des conteneurs à grande échelle. Elle permet de répartir les charges, de surveiller les applications et de garantir leur disponibilité, tout en simplifiant la gestion des infrastructures complexes.",
         "utilisations": "J'ai utilisé Kubernetes dans plusieurs projets significatifs pour optimiser la gestion et l'orchestration des conteneurs. Dans le cadre du projet Vidibio, j'ai géré un cluster Kubernetes comprenant plusieurs nœuds. J'ai orchestré différents pods, notamment pour la base de données, des serveurs de sauvegarde, l'API principale et un service de traitement d'images. Ce projet m'a permis de configurer et gérer des ressources essentielles comme les load balancers et les volumes, garantissant ainsi une répartition efficace des charges et une disponibilité optimale des services. Dans le projet Theseus-AI, j'ai utilisé Kubernetes de manière plus ciblée pour configurer un load balancer capable de gérer efficacement les requêtes envoyées au serveur de bots. Cette configuration permettait d'ouvrir ou de fermer dynamiquement des serveurs en fonction de l'utilisation, offrant une solution flexible et adaptée aux besoins fluctuants de l'application.",
@@ -60,6 +64,7 @@
       "logo": "/images/typescript.png",
       "title": "TypeScript",
       "level": 5,
+      "associatedRealisations": ["todoapp", "theseus"],
       "content": {
         "presentation": "TypeScript est un sur-ensemble de JavaScript qui ajoute un typage statique et des fonctionnalités de programmation orientée objet (POO). Créé par Microsoft en 2012, TypeScript permet aux développeurs de créer des applications robustes, maintenables et évolutives. Il se compile en JavaScript pur, ce qui le rend compatible avec tous les navigateurs et environnements qui supportent JavaScript. Grâce à son typage statique, TypeScript aide à détecter les erreurs à la compilation plutôt qu'à l'exécution, réduisant ainsi le nombre de bugs en production. Il propose aussi des concepts avancés comme les interfaces, les génériques et les décorateurs, qui enrichissent le langage et facilitent l'écriture d'un code structuré et clair.",
         "utilisations": "J'ai commencé à utiliser TypeScript dans le cadre de mes projets professionnels, attiré par les avantages du typage statique et de la POO. Lors du projet Gava, j'ai développé un site web pour l'organisation de tournois d'e-sport en utilisant Angular et TypeScript, ce qui m'a permis de réduire les erreurs liées à la manipulation des données complexes et d'améliorer la lisibilité du code. Dans le cadre de Vidibio, une application mobile innovante réalisée avec React Native, TypeScript a facilité l'intégration de fonctionnalités liées à la réalité augmentée, tout en structurant le code de manière modulaire et performante. Enfin, pour Theseus-AI, j'ai participé au développement d'un site en Next.js et d'une API NestJS intégrant Puppeteer pour enregistrer et analyser des réunions via Google Meet, Zoom et Teams. Dans chaque projet, TypeScript a significativement amélioré la robustesse et la maintenabilité du code.",
@@ -76,6 +81,7 @@
       "logo": "/images/adaptabilite.png",
       "title": "Adaptabilité",
       "level": 5,
+      "associatedRealisations": ["vidibio", "todoapp"],
       "content": {
         "presentation": "L'adaptabilité est une compétence essentielle pour tout développeur. Elle consiste à s'adapter rapidement aux nouvelles technologies, aux méthodologies de travail et aux environnements techniques variés. Dans un domaine en constante évolution comme l'informatique, savoir apprendre de nouveaux langages, outils ou frameworks est indispensable pour rester pertinent et efficace.",
         "utilisations": "Tout au long de mon cursus scolaire et de mes expériences professionnelles, j'ai été amené à faire preuve d'une grande adaptabilité. Dans mes projets comme Gava et Optivex, j'ai dû passer d'un langage à un autre, m'adapter à différentes technologies et apprendre rapidement de nouvelles méthodologies de développement. Dans un cadre plus professionnel, à travers des expériences comme Vidibio et Theseus-AI, j'ai travaillé sur des infrastructures variées, passant de React Native à Kubernetes, en gérant des API, des systèmes de traitement d'images et même des serveurs. Mon auto-entreprise m'a également poussé à naviguer entre plusieurs domaines, du développement pur à la gestion de systèmes et à l'intégration continue. Cette capacité d'adaptation me permet aujourd'hui d'aborder de nouveaux projets sans difficulté, quelle que soit la stack technologique ou l'environnement de travail.",
@@ -90,6 +96,7 @@
       "logo": "/images/anglais.png",
       "title": "Anglais",
       "level": 4,
+      "associatedRealisations": ["optivex", "theseus"],
       "content": {
         "presentation": "L'anglais est une compétence essentielle dans le domaine du développement, que ce soit pour la communication avec des collègues, la lecture de documentation technique ou l'apprentissage de nouvelles technologies. Aujourd'hui, la majorité des ressources, des tutoriels et des documentations sont disponibles en anglais, ce qui en fait une langue incontournable pour tout développeur.",
         "utilisations": "J'ai eu l'occasion d'utiliser l'anglais dans un cadre professionnel à travers mes expériences sur des projets comme Vidibio et Theseus-AI, où j'ai collaboré avec des collègues anglophones. Cela m'a poussé à m'adapter et à m'exprimer couramment en anglais, aussi bien à l'oral qu'à l'écrit, notamment pour les réunions, les comptes rendus et les échanges techniques. En dehors du cadre professionnel, j'ai développé mes compétences en anglais à travers mon parcours scolaire et universitaire, notamment en obtenant un diplôme du TOEIC. Par ailleurs, je consomme régulièrement du contenu en anglais, que ce soit des films, des séries, des articles ou de la documentation technique, ce qui me permet d'améliorer constamment ma compréhension et mon vocabulaire technique.",
@@ -104,6 +111,7 @@
       "logo": "/images/autonomie.png",
       "title": "Autonomie",
       "level": 5,
+      "associatedRealisations": ["vidibio", "todoapp"],
       "content": {
         "presentation": "L'autonomie, dans le domaine du développement, est la capacité à apprendre, résoudre des problèmes et avancer sur un projet sans supervision constante. Elle est essentielle pour gagner en efficacité et en productivité, tout en restant adaptable aux défis rencontrés.",
         "utilisations": "L'autonomie est une compétence clé dans mon travail quotidien de développeur. Dans mes projets, qu'ils soient personnels, professionnels ou dans le cadre de ma micro-entreprise de développement, je suis souvent amené à apprendre de nouvelles technologies et à résoudre des problématiques techniques sans assistance directe.",
@@ -118,6 +126,7 @@
       "logo": "/images/flexibilite.png",
       "title": "Flexibilité",
       "level": 5,
+      "associatedRealisations": ["gava", "theseus"],
       "content": {
         "presentation": "La flexibilité est une compétence clé dans le domaine du développement. Elle permet de s'adapter aux imprévus, de modifier ses approches en fonction des besoins d'un projet et d'ajuster ses méthodes de travail pour garantir un résultat optimal.",
         "utilisations": "J'ai développé une grande flexibilité tout au long de mes expériences, notamment dans des projets comme Gava, Optivex, Vidibio et Theseus-AI.",
@@ -132,6 +141,7 @@
       "logo": "/images/pensee.png",
       "title": "Pensée critique",
       "level": 4,
+      "associatedRealisations": ["gava", "optivex"],
       "content": {
         "presentation": "La pensée critique est une compétence essentielle pour un développeur. Elle permet d'analyser un problème, d'évaluer différentes solutions et de prendre des décisions éclairées.",
         "utilisations": "Tout au long de mon parcours, j'ai développé ma pensée critique en travaillant sur divers projets.",

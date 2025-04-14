@@ -6,6 +6,7 @@ interface Competence {
   logo: string;
   title: string;
   level: number;
+  associatedRealisations: string[];
   content: {
     presentation: string;
     utilisations: string;

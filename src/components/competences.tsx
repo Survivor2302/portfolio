@@ -8,11 +8,13 @@ import {
   SquareDashedMousePointer,
 } from "lucide-react";
 import Image from "next/image";
+import AssociatedRealisations from "./associatedRealisations";
 
 interface Competence {
   logo: string;
   title: string;
   level: number;
+  associatedRealisations: string[];
   content: {
     presentation: string;
     utilisations: string;
@@ -192,6 +194,11 @@ export default function Competences({ competence }: Props) {
               {competence.content.importance}
             </div>
           </div>
+          <hr className="border-0 h-1 bg-gradient-to-r from-pink-light to-purple-light " />
+
+          <AssociatedRealisations
+            realisationIds={competence.associatedRealisations}
+          />
         </section>
       </section>
     </section>
