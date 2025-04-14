@@ -23,7 +23,7 @@ export default function Home() {
             </div>
             <button
               onClick={() =>
-                (window.location.href = "mailto:example@example.com")
+                (window.location.href = "mailto:bournizien@et.esiea.fr")
               }
               className="bg-gradient-to-r from-pink-light to-purple-light font-bold text-white px-4 py-2 rounded-lg w-36 hover:cursor-pointer text-center"
             >

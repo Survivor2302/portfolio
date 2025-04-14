@@ -1,12 +1,11 @@
 "use client";
 import { useRouter } from "next/navigation";
 import RealisationPreview from "@/components/realisations/RealisationPreview";
-import CompetenceSection, {
-  CompetenceType,
-} from "@/components/competences/CompetenceSection";
+import CompetenceSection from "@/components/competences/CompetenceSection";
 import { Code, FolderOpen } from "lucide-react";
 import Image from "next/image";
 import realisationsData from "@/data/realisations.json";
+import { CompetenceType } from "@/types";
 
 export default function Home() {
   const router = useRouter();
@@ -182,7 +181,7 @@ export default function Home() {
               <div className="absolute top-1/2 -left-32 -right-32 h-1 bg-gray-300"></div>
             </div>
             <h3 className="font-bold">Vidibio, Inria start-up studio</h3>
-            <p className="text-center">Développeur fullstack – Agen</p>
+            <p className="text-center">Développeur fullstack – Bordeaux</p>
           </div>
 
           <div className="flex flex-col items-center relative">
@@ -252,11 +251,11 @@ export default function Home() {
         </h1>
         <CompetenceSection
           title="Techniques"
-          competenceType={CompetenceType.TECHNIQUES}
+          competenceType={CompetenceType.Techniques}
         />
         <CompetenceSection
           title="Humaines"
-          competenceType={CompetenceType.HUMAINES}
+          competenceType={CompetenceType.Humaines}
         />
       </section>
     </main>

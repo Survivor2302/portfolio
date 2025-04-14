@@ -1,28 +1,9 @@
 import competencesData from "@/data/competences.json";
 import CompetenceCard from "./CompetenceCard";
-
-export enum CompetenceType {
-  TECHNIQUES = "techniques",
-  HUMAINES = "humaines",
-}
-
-export enum CompetenceKey {
-  // Techniques
-  DOCKER = "docker",
-  GIT = "git",
-  JAVA = "java",
-  KUBERNETES = "kubernetes",
-  TYPESCRIPT = "typescript",
-  // Humaines
-  ADAPTABILITE = "adaptabilite",
-  ANGLAIS = "anglais",
-  AUTONOMIE = "autonomie",
-  FLEXIBILITE = "flexibilite",
-  PENSEE = "pensee",
-}
+import { CompetenceType, CompetenceName, CompetencesData } from "@/types";
 
 type CompetenceItem = {
-  key: CompetenceKey;
+  key: CompetenceName;
   type: CompetenceType;
 };
 
@@ -30,28 +11,6 @@ type Props = {
   title: string;
   competenceType?: CompetenceType;
   competences?: CompetenceItem[];
-};
-
-type CompetenceData = {
-  [key in CompetenceKey]: {
-    logo: string;
-    title: string;
-    level: number;
-    associatedRealisations: string[];
-    content: {
-      presentation: string;
-      utilisations: string;
-      maitrise: string;
-      formation: string;
-      conseils: string;
-      projet: string;
-      importance: string;
-    };
-  };
-};
-
-type CompetencesData = {
-  [key in CompetenceType]: CompetenceData;
 };
 
 export default function CompetenceSection({
@@ -62,7 +21,7 @@ export default function CompetenceSection({
   const itemsToRender =
     competences ??
     Object.keys(competencesData[competenceType!]).map((key) => ({
-      key: key as CompetenceKey,
+      key: key as CompetenceName,
       type: competenceType!,
     }));
 

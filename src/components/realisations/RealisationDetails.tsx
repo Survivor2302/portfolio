@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { Realisation } from "@/types";
+import { CompetenceName, CompetenceType, Realisation } from "@/types";
+import CompetenceSection from "../competences/CompetenceSection";
 
 type Props = {
   realisation: Realisation;
@@ -9,8 +10,8 @@ type Props = {
 
 export default function RealisationDetails({ realisation }: Props) {
   return (
-    <div className="flex flex-col items-center">
-      <div className="w-32 h-32 relative mb-6">
+    <div className="flex flex-col items-center gap-8 mb-24">
+      <div className="w-32 h-32 relative">
         <Image
           src={realisation.img}
           alt={realisation.titre}
@@ -26,6 +27,21 @@ export default function RealisationDetails({ realisation }: Props) {
             <p className="text-gray-700">{value}</p>
           </div>
         ))}
+      </div>
+      <div className="flex flex-col gap-8">
+        <CompetenceSection
+          title="Compétences associées"
+          competences={[
+            ...realisation.associatedCompetences.techniques.map((key) => ({
+              key: key as CompetenceName,
+              type: CompetenceType.Techniques,
+            })),
+            ...realisation.associatedCompetences.humaines.map((key) => ({
+              key: key as CompetenceName,
+              type: CompetenceType.Humaines,
+            })),
+          ]}
+        />
       </div>
     </div>
   );

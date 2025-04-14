@@ -5,13 +5,10 @@ export interface Competence {
   level: number;
   associatedRealisations: string[];
   content: {
-    presentation: string;
-    utilisations: string;
-    maitrise: string;
-    formation: string;
-    conseils: string;
-    projet: string;
-    importance: string;
+    definition: string;
+    exemplesConcrets: Record<string, string>;
+    autocritique: string;
+    evolution: string;
   };
 }
 
