@@ -1,9 +1,9 @@
 "use client";
 import { useRouter } from "next/navigation";
-import CardRealisations from "@/components/card-realisations";
+import RealisationPreview from "@/components/realisations/RealisationPreview";
 import CompetenceSection, {
   CompetenceType,
-} from "@/components/CompetenceSection";
+} from "@/components/competences/CompetenceSection";
 import { Code, FolderOpen } from "lucide-react";
 import Image from "next/image";
 import realisationsData from "@/data/realisations.json";
@@ -231,7 +231,7 @@ export default function Home() {
         </h1>
         <div className="mt-20 flex flex-col gap-8">
           {Object.entries(realisationsData).map(([key, project], index) => (
-            <CardRealisations
+            <RealisationPreview
               key={key}
               img={project.previewPicture}
               titre={project.titre}

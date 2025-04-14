@@ -8,29 +8,14 @@ import {
   SquareDashedMousePointer,
 } from "lucide-react";
 import Image from "next/image";
-import AssociatedRealisations from "./associatedRealisations";
-
-interface Competence {
-  logo: string;
-  title: string;
-  level: number;
-  associatedRealisations: string[];
-  content: {
-    presentation: string;
-    utilisations: string;
-    maitrise: string;
-    formation: string;
-    conseils: string;
-    projet: string;
-    importance: string;
-  };
-}
+import AssociatedRealisations from "../realisations/AssociatedRealisations";
+import { Competence } from "@/types";
 
 type Props = {
   competence: Competence;
 };
 
-export default function Competences({ competence }: Props) {
+export default function CompetenceDetails({ competence }: Props) {
   return (
     <section className="my-36">
       <div className="w-full flex flex-col items-center">

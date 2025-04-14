@@ -11,7 +11,7 @@ type Props = {
   showDivider: boolean;
 };
 
-export default function CardRealisations({
+export default function RealisationPreview({
   href,
   text,
   titre,
@@ -34,8 +34,12 @@ export default function CardRealisations({
             />
           </div>
         )}
-        <div className="flex flex-col gap-2 w-full  ">
-          <h3 className="mt-2 font-bold truncate text-xl">{titre}</h3>
+        <div
+          className={`flex flex-col gap-2 w-full ${
+            position === "right" ? "items-start" : "items-end"
+          }`}
+        >
+          <h3 className="mt-2 font-bold truncate text-xl w-full">{titre}</h3>
           <p className=" text-gray-500 ">{text}</p>
           <button
             onClick={() => {

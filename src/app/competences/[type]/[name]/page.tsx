@@ -1,49 +1,7 @@
-import Competences from "@/components/competences";
 import { notFound } from "next/navigation";
-
-// Define the structure of a single competence
-interface Competence {
-  logo: string;
-  title: string;
-  level: number;
-  associatedRealisations: string[];
-  content: {
-    presentation: string;
-    utilisations: string;
-    maitrise: string;
-    formation: string;
-    conseils: string;
-    projet: string;
-    importance: string;
-  };
-}
-
-// Define the structure of the competences data
-interface CompetencesData {
-  techniques: Record<string, Competence>;
-  humaines: Record<string, Competence>;
-}
-
+import { CompetenceType, CompetenceName, CompetencesData } from "@/types";
 import competencesData from "@/data/competences.json";
-
-// Define enums for competence types and names
-enum CompetenceType {
-  Techniques = "techniques",
-  Humaines = "humaines",
-}
-
-enum CompetenceName {
-  Docker = "docker",
-  Git = "git",
-  Java = "java",
-  Kubernetes = "kubernetes",
-  TypeScript = "typescript",
-  Adaptabilite = "adaptabilite",
-  Anglais = "anglais",
-  Autonomie = "autonomie",
-  Flexibilite = "flexibilite",
-  Pensee = "pensee",
-}
+import CompetenceDetails from "@/components/competences/CompetenceDetails";
 
 export function generateStaticParams() {
   const params = [];
@@ -76,7 +34,7 @@ export default async function CompetencePage({
 
   return (
     <main className="md:px-28 px-8">
-      <Competences competence={competence} />
+      <CompetenceDetails competence={competence} />
     </main>
   );
 }

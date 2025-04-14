@@ -29,7 +29,7 @@ const getLevelLabel = (level: number) => {
   }
 };
 
-export default function Card({ href, level, titre, img }: Props) {
+export default function CompetenceCard({ href, level, titre, img }: Props) {
   const router = useRouter();
   return (
     <button

@@ -1,5 +1,5 @@
-import Card from "./card";
 import competencesData from "@/data/competences.json";
+import CompetenceCard from "./CompetenceCard";
 
 export enum CompetenceType {
   TECHNIQUES = "techniques",
@@ -73,7 +73,7 @@ export default function CompetenceSection({
         {itemsToRender.map(({ key, type }) => {
           const competence = (competencesData as CompetencesData)[type][key];
           return (
-            <Card
+            <CompetenceCard
               key={key}
               img={competence.logo}
               titre={competence.title}

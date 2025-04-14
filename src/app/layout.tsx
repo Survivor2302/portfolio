@@ -11,6 +11,9 @@ const geistSans = Quicksand({
 export const metadata: Metadata = {
   title: "Léo Bournizien",
   description: "Portfolio présentant mes compétences et projets",
+  icons: {
+    icon: [{ url: "/favicon.ico", sizes: "any" }],
+  },
 };
 
 export default function RootLayout({
