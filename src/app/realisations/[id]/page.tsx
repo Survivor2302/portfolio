@@ -4,15 +4,19 @@ import { notFound } from "next/navigation";
 interface RealisationData {
   titre: string;
   img: string;
+  previewPicture: string;
+  preview: string;
   description: string;
-  missions: string[];
-  role: string[];
-  technologies: string[];
-  client: string[];
-  objectif: string[];
-  galerie: string[];
-  processus: string[];
-  conclusions: string[];
+  content: {
+    missions: string;
+    role: string;
+    technologies: string;
+    client: string;
+    objectif: string;
+    galerie: string;
+    processus: string;
+    conclusions: string;
+  };
   associatedCompetences: {
     techniques: CompetenceKey[];
     humaines: CompetenceKey[];
@@ -52,14 +56,7 @@ export default async function RealisationPage({
         <Realisations
           img={realisation.img}
           title={realisation.titre}
-          missions={realisation.missions}
-          role={realisation.role}
-          technologies={realisation.technologies}
-          client={realisation.client}
-          objectif={realisation.objectif}
-          galerie={realisation.galerie}
-          processus={realisation.processus}
-          conclusions={realisation.conclusions}
+          content={realisation.content}
           associatedCompetences={realisation.associatedCompetences}
         />
       </section>

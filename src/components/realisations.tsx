@@ -13,33 +13,28 @@ import { CompetenceType, CompetenceKey } from "./CompetenceSection";
 
 type Props = {
   title: string;
-  missions: string[];
-  role: string[];
-  technologies: string[];
-  client: string[];
-  objectif: string[];
-  galerie: string[];
-  processus: string[];
-  conclusions: string[];
+  img: string;
+  content: {
+    missions: string;
+    role: string;
+    technologies: string;
+    client: string;
+    objectif: string;
+    galerie: string;
+    processus: string;
+    conclusions: string;
+  };
   associatedCompetences: {
     techniques: CompetenceKey[];
     humaines: CompetenceKey[];
   };
-  img: string;
 };
 
 export default function Realisations({
   title,
-  missions,
-  role,
-  technologies,
-  client,
-  objectif,
-  galerie,
-  processus,
-  conclusions,
-  associatedCompetences,
   img,
+  content,
+  associatedCompetences,
 }: Props) {
   return (
     <section className="">
@@ -67,10 +62,7 @@ export default function Realisations({
                   Mission
                 </h2>
               </div>
-
-              {missions.map((text, index) => (
-                <p key={index}>{text}</p>
-              ))}
+              <p>{content.missions}</p>
             </div>
           </div>
 
@@ -82,9 +74,7 @@ export default function Realisations({
                   Rôle
                 </h2>
               </div>
-              {role.map((text, index) => (
-                <p key={index}>{text}</p>
-              ))}
+              <p>{content.role}</p>
             </div>
           </div>
 
@@ -96,9 +86,7 @@ export default function Realisations({
                   Technologies
                 </h2>
               </div>
-              {technologies.map((text, index) => (
-                <p key={index}>{text}</p>
-              ))}
+              <p>{content.technologies}</p>
             </div>
           </div>
 
@@ -110,9 +98,7 @@ export default function Realisations({
                   Client
                 </h2>
               </div>
-              {client.map((text, index) => (
-                <p key={index}>{text}</p>
-              ))}
+              <p>{content.client}</p>
             </div>
           </div>
 
@@ -121,12 +107,10 @@ export default function Realisations({
               <div className="flex gap-2 items-center">
                 <Goal className="w-5" />
                 <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold ">
-                  Objectifs, contexte et enjeux
+                  Objectifs, contexte et enjeux
                 </h2>
               </div>
-              {objectif.map((text, index) => (
-                <p key={index}>{text}</p>
-              ))}
+              <p>{content.objectif}</p>
             </div>
           </div>
 
@@ -135,12 +119,10 @@ export default function Realisations({
               <div className="flex gap-2 items-center">
                 <Camera className="w-5" />
                 <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text font-bold  text-transparent">
-                  La galerie de travaux
+                  La galerie de travaux
                 </h2>
               </div>
-              {galerie.map((text, index) => (
-                <p key={index}>{text}</p>
-              ))}
+              <p>{content.galerie}</p>
             </div>
           </div>
 
@@ -149,12 +131,10 @@ export default function Realisations({
               <div className="flex gap-2 items-center">
                 <PencilLine className="w-5" />
                 <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text font-bold  text-transparent">
-                  Processus de développement
+                  Processus de développement
                 </h2>
               </div>
-              {processus.map((text, index) => (
-                <p key={index}>{text}</p>
-              ))}
+              <p>{content.processus}</p>
             </div>
           </div>
 
@@ -166,9 +146,7 @@ export default function Realisations({
                   Conclusion
                 </h2>
               </div>
-              {conclusions.map((text, index) => (
-                <p key={index}>{text}</p>
-              ))}
+              <p>{content.conclusions}</p>
             </div>
           </div>
 

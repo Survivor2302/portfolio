@@ -9,38 +9,35 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
-type Props = {
-  title: string;
-  presentation: string[];
-  utilisations: string[];
-  maitrise: string[];
-  formation: string[];
-  conseils: string[];
-  projet: string[];
-  importance: string[];
+interface Competence {
   logo: string;
+  title: string;
+  level: number;
+  content: {
+    presentation: string;
+    utilisations: string;
+    maitrise: string;
+    formation: string;
+    conseils: string;
+    projet: string;
+    importance: string;
+  };
+}
+
+type Props = {
+  competence: Competence;
 };
 
-export default function Competences({
-  title,
-  presentation,
-  utilisations,
-  maitrise,
-  formation,
-  conseils,
-  projet,
-  importance,
-  logo,
-}: Props) {
+export default function Competences({ competence }: Props) {
   return (
     <section className="my-36">
       <div className="w-full flex flex-col items-center">
         <h1 className="text-center text-5xl bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold">
-          {title}
+          {competence.title}
         </h1>
 
         <Image
-          src={logo}
+          src={competence.logo}
           alt="logo"
           width={100}
           height={100}
@@ -66,11 +63,7 @@ export default function Competences({
                 </h2>
               </div>
 
-              {presentation.map((text, index) => (
-                <p key={index} className="text-lg">
-                  {text}
-                </p>
-              ))}
+              {competence.content.presentation}
             </div>
           </div>
 
@@ -84,11 +77,7 @@ export default function Competences({
                   Utilisation
                 </h2>
               </div>
-              {utilisations.map((text, index) => (
-                <p key={index} className="text-lg">
-                  {text}
-                </p>
-              ))}
+              {competence.content.utilisations}
             </div>
             <Image
               src={"/images/utilisation.jpg"}
@@ -116,11 +105,7 @@ export default function Competences({
                   Maîtrise
                 </h2>
               </div>
-              {maitrise.map((text, index) => (
-                <p key={index} className="text-lg">
-                  {text}
-                </p>
-              ))}
+              {competence.content.maitrise}
             </div>
           </div>
 
@@ -134,11 +119,7 @@ export default function Competences({
                   Formation en cours
                 </h2>
               </div>
-              {formation.map((text, index) => (
-                <p key={index} className="text-lg">
-                  {text}
-                </p>
-              ))}
+              {competence.content.formation}
             </div>
             <Image
               src={"/images/formation.jpg"}
@@ -166,11 +147,7 @@ export default function Competences({
                   Conseils
                 </h2>
               </div>
-              {conseils.map((text, index) => (
-                <p key={index} className="text-lg">
-                  {text}
-                </p>
-              ))}
+              {competence.content.conseils}
             </div>
           </div>
 
@@ -184,11 +161,7 @@ export default function Competences({
                   Projet personnel-professionnel
                 </h2>
               </div>
-              {projet.map((text, index) => (
-                <p key={index} className="text-lg">
-                  {text}
-                </p>
-              ))}
+              {competence.content.projet}
             </div>
             <Image
               src={"/images/sociopro.jpg"}
@@ -216,11 +189,7 @@ export default function Competences({
                   Importance de cette compétence
                 </h2>
               </div>
-              {importance.map((text, index) => (
-                <p key={index} className="text-lg">
-                  {text}
-                </p>
-              ))}
+              {competence.content.importance}
             </div>
           </div>
         </section>

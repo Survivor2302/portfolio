@@ -6,13 +6,15 @@ interface Competence {
   logo: string;
   title: string;
   level: number;
-  presentation: string[];
-  utilisations: string[];
-  maitrise: string[];
-  formation: string[];
-  conseils: string[];
-  projet: string[];
-  importance: string[];
+  content: {
+    presentation: string;
+    utilisations: string;
+    maitrise: string;
+    formation: string;
+    conseils: string;
+    projet: string;
+    importance: string;
+  };
 }
 
 // Define the structure of the competences data
@@ -44,7 +46,7 @@ enum CompetenceName {
 
 export function generateStaticParams() {
   const params = [];
-  const competencesDataTyped = competencesData as CompetencesData;
+  const competencesDataTyped = competencesData as unknown as CompetencesData;
 
   for (const type in competencesDataTyped) {
     for (const name in competencesDataTyped[type as keyof CompetencesData]) {
@@ -63,30 +65,17 @@ export default async function CompetencePage({
   const resolvedParams = await params;
   const { type, name } = resolvedParams;
 
-  if (
-    !competencesData[type] ||
-    !(competencesData[type] as Record<string, Competence>)[name]
-  ) {
+  const competencesDataTyped = competencesData as unknown as CompetencesData;
+
+  if (!competencesDataTyped[type] || !competencesDataTyped[type][name]) {
     return notFound();
   }
 
-  const competence = (competencesData[type] as Record<string, Competence>)[
-    name
-  ];
+  const competence = competencesDataTyped[type][name];
 
   return (
     <main className="md:px-28 px-8">
-      <Competences
-        logo={competence.logo}
-        title={competence.title}
-        presentation={competence.presentation}
-        utilisations={competence.utilisations}
-        maitrise={competence.maitrise}
-        formation={competence.formation}
-        conseils={competence.conseils}
-        projet={competence.projet}
-        importance={competence.importance}
-      />
+      <Competences competence={competence} />
     </main>
   );
 }

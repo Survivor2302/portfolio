@@ -37,13 +37,15 @@ type CompetenceData = {
     logo: string;
     title: string;
     level: number;
-    presentation: string[];
-    utilisations: string[];
-    maitrise: string[];
-    formation: string[];
-    conseils: string[];
-    projet: string[];
-    importance: string[];
+    content: {
+      presentation: string;
+      utilisations: string;
+      maitrise: string;
+      formation: string;
+      conseils: string;
+      projet: string;
+      importance: string;
+    };
   };
 };
 
