@@ -25,14 +25,10 @@ export interface Realisation {
   preview: string;
   description: string;
   content: {
-    missions: string;
-    role: string;
-    technologies: string;
-    client: string;
-    objectif: string;
-    galerie: string;
-    processus: string;
-    conclusions: string;
+    definition: string;
+    exemplesConcrets: Record<string, string>;
+    autocritique: string;
+    evolution: string;
   };
   associatedCompetences: {
     techniques: string[];
