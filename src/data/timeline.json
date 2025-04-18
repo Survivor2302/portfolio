@@ -1,0 +1,42 @@
+[
+  {
+    "logo": "/images/logo/theseus.png",
+    "alt": "Logo 1",
+    "years": "2023-2025",
+    "title": "Theseus-ai",
+    "job": "Développeur fullstack",
+    "localisation": "Bordeaux",
+    "link": "https://www.theseus-ai.com/",
+    "details": "Theseus est une entreprise qui développe une solution d'IA qui enregistre et transcrit automatiquement chaque réunion, transformant les discussions en notes organisées et exploitables. Leur technologie utilise des modèles de deep learning avancés pour la transcription, la diarisation et la création de résumés intelligents. Spécialement optimisée pour le secteur financier, leur plateforme assure une précision exceptionnelle dans la capture de la terminologie spécifique à ce domaine, tout en garantissant une sécurité des données au plus haut niveau (SOC2, HIPAA, RGPD)."
+  },
+  {
+    "logo": "/images/logo/inria.jpg",
+    "alt": "Logo 2",
+    "years": "2023",
+    "title": "Vidibio, Inria start-up studio",
+    "job": "Développeur fullstack",
+    "localisation": "Bordeaux",
+    "link": "https://www.inria.fr/fr/inria-startup-studio",
+    "details": "Vidibio est une startup incubée à l'INRIA dans le programme INRIA Startup Studio. Elle propose une solution simple de scan des haies via un smartphone pour un monitoring précis de la biomasse et de la biodiversité. Cette technologie permet d'améliorer le déploiement des incitations financières pour que les agriculteurs gèrent leurs haies de manière plus durable."
+  },
+  {
+    "logo": "/images/logo/esiea.png",
+    "alt": "Logo 3",
+    "years": "2020-2025",
+    "title": "ESIEA",
+    "job": "RNCP 1, ingénierie logicielle",
+    "localisation": "Agen",
+    "link": "https://www.esiea.fr/",
+    "details": "Formation à l'ESIEA (École supérieure d'informatique électronique automatique) dans le cadre du programme Expert en Ingénierie du développement d'applications du Titre RNCP «Expert en ingénierie du logiciel» n° 35419, code NSF 326 de niveau 7.\n\nCette formation professionnalisante m'a permis de développer des compétences essentielles en tant que futur expert en développement d'applications :\n\n• Recueillir et analyser les besoins clients, adopter une approche conseil adaptée au contexte\n• Piloter des projets de développement logiciel et d'intégration\n• Prototyper, concevoir et développer des solutions multi-plateformes robustes et évolutives\n• Maîtriser l'intégration continue, la livraison et le déploiement continu\n• Concevoir des architectures logicielles avancées en appliquant les design patterns\n• Utiliser efficacement l'Intelligence Artificielle et le traitement de données dans les applications métier"
+  },
+  {
+    "logo": "/images/logo/stcap.png",
+    "alt": "Logo 4",
+    "years": "2017-2020",
+    "title": "Lycée Saint-Caprais",
+    "job": "Baccalauréat Scientifique",
+    "localisation": "Agen",
+    "link": "https://www.lycee-saintcaprais.fr/fr.html",
+    "details": "Le Lycée Saint-Caprais est un établissement privé à Agen où j'ai obtenu mon Baccalauréat Scientifique avec mention."
+  }
+]

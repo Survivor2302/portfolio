@@ -6,9 +6,13 @@ import { Code, FolderOpen } from "lucide-react";
 import Image from "next/image";
 import realisationsData from "@/data/realisations.json";
 import { CompetenceType } from "@/types";
+import Timeline from "@/components/Timeline";
+import timelineData from "@/data/timeline.json";
+import { useState } from "react";
 
 export default function Home() {
   const router = useRouter();
+  const [selectedTimeline, setSelectedTimeline] = useState<number | null>(null);
 
   return (
     <main className="scroll-smooth overflow-auto mb-28">
@@ -147,79 +151,45 @@ export default function Home() {
         <h2 className="text-2xl text-center mb-8 font-bold bg-gradient-to-r from-pink-light/80 to-purple-light/80 bg-clip-text text-transparent">
           Parcours
         </h2>
-        <div className="relative flex flex-col md:flex-row justify-center items-center gap-8">
-          <div className="flex flex-col items-center relative">
-            <Image
-              src="/images/logo/theseus.png"
-              alt="Logo 1"
-              width={100}
-              height={100}
-              className="h-12 mb-4 object-contain"
-            />
-            <div className="relative flex flex-col items-center">
-              <div className="bg-gradient-to-r from-pink-light/80 to-purple-light/80 text-white px-4 py-1 rounded-full mb-2 relative z-10">
-                2023-2025
-              </div>
-              <div className="absolute top-1/2 -left-32 -right-32 h-1 bg-gray-300"></div>
-            </div>
-            <h3 className="font-bold">Theseus-ai</h3>
-            <p className="text-center">Développeur fullstack – Bordeaux</p>
-          </div>
+        <Timeline
+          items={timelineData}
+          selectedIndex={selectedTimeline}
+          onSelect={setSelectedTimeline}
+        />
+        {selectedTimeline !== null &&
+          timelineData[selectedTimeline]?.details && (
+            <div className="w-full flex justify-center mt-9 animate-fadeIn relative">
+              <div className="relative max-w-4xl w-full overflow-hidden rounded-lg">
+                {/* Arrière-plan avec motif subtil */}
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white opacity-95"></div>
 
-          <div className="flex flex-col items-center relative">
-            <Image
-              src="/images/logo/inria.jpg"
-              alt="Logo 2"
-              width={100}
-              height={100}
-              className="h-12 mb-4 object-contain"
-            />
-            <div className="relative flex flex-col items-center">
-              <div className="bg-gradient-to-r from-pink-light/80 to-purple-light/80 text-white px-4 py-1 rounded-full mb-2 relative z-10">
-                2023
-              </div>
-              <div className="absolute top-1/2 -left-32 -right-32 h-1 bg-gray-300"></div>
-            </div>
-            <h3 className="font-bold">Vidibio, Inria start-up studio</h3>
-            <p className="text-center">Développeur fullstack – Bordeaux</p>
-          </div>
+                {/* Points décoratifs */}
+                <div
+                  className="absolute inset-0 opacity-10"
+                  style={{
+                    backgroundImage:
+                      "radial-gradient(circle, #9C27B0 1px, transparent 1px)",
+                    backgroundSize: "20px 20px",
+                  }}
+                ></div>
 
-          <div className="flex flex-col items-center relative">
-            <Image
-              src="/images/logo/esiea.png"
-              alt="Logo 3"
-              width={100}
-              height={100}
-              className="h-12 mb-4 object-contain"
-            />
-            <div className="relative flex flex-col items-center">
-              <div className="bg-gradient-to-r from-pink-light/80 to-purple-light/80 text-white px-4 py-1 rounded-full mb-2 relative z-10">
-                2020-2025
-              </div>
-              <div className="absolute top-1/2 -left-32 -right-32 h-1 bg-gray-300"></div>
-            </div>
-            <h3 className="font-bold">ESIEA</h3>
-            <p className="text-center">RNCP 1, ingénierie logicielle – Agen</p>
-          </div>
+                {/* Bordure gradient */}
+                <div className="p-[2px] bg-gradient-to-r from-pink-light to-purple-light rounded-lg">
+                  <div className="bg-white backdrop-blur-sm rounded-lg p-8 text-gray-800 text-base whitespace-pre-line shadow-inner relative z-10">
+                    {/* Titre du point timeline */}
+                    <h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent">
+                      {timelineData[selectedTimeline].title}
+                    </h3>
 
-          <div className="flex flex-col items-center relative">
-            <Image
-              src="/images/logo/stcap.png"
-              alt="Logo 4"
-              width={100}
-              height={100}
-              className="h-12 mb-4 object-contain"
-            />
-            <div className="relative flex flex-col items-center">
-              <div className="bg-gradient-to-r from-pink-light/80 to-purple-light/80 text-white px-4 py-1 rounded-full mb-2 relative z-10">
-                2017-2020
+                    {/* Contenu des détails */}
+                    <div className="prose prose-sm max-w-none">
+                      {timelineData[selectedTimeline].details}
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="absolute top-1/2 -left-32 -right-32 h-1 bg-gray-300"></div>
             </div>
-            <h3 className="font-bold">Lycée Saint-Caprais</h3>
-            <p className="text-center">Baccalauréat Scientifique – Agen</p>
-          </div>
-        </div>
+          )}
       </section>
 
       <hr className="border-0 h-1 bg-gradient-to-r from-pink-light to-purple-light mx-28" />
