@@ -3,12 +3,12 @@ import { useRouter } from "next/navigation";
 import RealisationPreview from "@/components/realisations/RealisationPreview";
 import CompetenceSection from "@/components/competences/CompetenceSection";
 import { Code, FolderOpen } from "lucide-react";
-import Image from "next/image";
 import realisationsData from "@/data/realisations.json";
 import { CompetenceType } from "@/types";
 import Timeline from "@/components/Timeline";
 import timelineData from "@/data/timeline.json";
 import { useState } from "react";
+import About from "@/components/About";
 
 export default function Home() {
   const router = useRouter();
@@ -73,76 +73,7 @@ export default function Home() {
         </div>
       </section>
       <section id="qui-suis-je" className="mb-24 md:px-28 px-8 pt-24">
-        <div className=" px-8 md:px-24">
-          <h2 className="text-2xl text-center mb-8 font-bold bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent">
-            Qui suis-je ?
-          </h2>
-          <section className=" flex flex-col gap-8 ">
-            <div className="flex gap-8 items-center flex-col md:flex-row">
-              <Image
-                src={"/images/profile_picture.jpg"}
-                width={2316}
-                height={3088}
-                className="h-fit max-w-82 w-full overflow-hidden rounded-lg border-4 border-transparent bg-gradient-to-r from-pink-light to-purple-light p-1"
-                alt="Profile picture"
-              />
-              <div className="flex flex-col gap-8 w-full">
-                <div className="flex flex-col gap-2 w-full">
-                  <h3 className="text-xl bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold">
-                    Étudiant et développeur freelance
-                  </h3>
-                  <p>
-                    {
-                      "Actuellement en cinquième année à l'ESIEA, je mets à profit les compétences développées au cours de mon parcours académique pour m'adapter rapidement aux nouvelles technologies et répondre efficacement aux exigences de mes clients. Mon objectif principal est d'accroître la valeur des marques en créant des applications, sites et/ou logiciel afin de leurs permettre d'accroitre et améliorer leurs productivités."
-                    }
-                  </p>
-                </div>
-
-                <div className="flex flex-col gap-2 w-full">
-                  <h3 className="text-xl bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold">
-                    Futur Expert en Ingénierie Logicielle
-                  </h3>
-                  <p>
-                    {
-                      "Je suis profondément conscient de mes responsabilités envers la société et l'environnement. Je m'investis activement dans le développement de projets qui sont à la fois humains, éthiques et durables, en intégrant ces principes à chaque étape de mon parcours professionnel. Cela me permet de générer un impact positif sur la société tout en respectant les ressources naturelles et les normes environnementales."
-                    }
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-2">
-              <h3 className="text-xl bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold">
-                Projets Professionnels et Personnels
-              </h3>
-              <p>
-                {
-                  "Mon ambition professionnelle est étroitement liée à mes aspirations personnelles, qui visent à développer des solutions technologiques accessibles et inclusives pour améliorer la qualité de vie des individus. Mes qualités humaines telles que mon adaptabilité et ma pensée critique sont essentielles pour collaborer efficacement avec mes collaborateurs et répondre aux besoins des utilisateurs."
-                }
-              </p>
-            </div>
-            <div className="flex flex-col gap-2">
-              <h3 className="text-xl bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold">
-                {"Passion pour le Développement d'Applications et de Logiciels"}
-              </h3>
-              <p>
-                {
-                  "Je suis passionné par les innovations dans le domaine du développement d'applications et de logiciels, ce qui constitue l'un de mes principaux centres d'intérêts. Cette passion me permet de concevoir des solutions logicielles avancées et intuitives, visant à simplifier et optimiser les processus professionnels et l'analyse de données. Mon objectif est de rendre ces outils accessibles et efficaces, afin d'aider les professionnels à améliorer leur efficacité et à prendre des décisions éclairées basées sur des données précises et pertinentes."
-                }
-              </p>
-            </div>
-            <div className="flex flex-col gap-2">
-              <h3 className="text-xl bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold">
-                {"Toujours à l'Avant-Garde Technologique"}
-              </h3>
-              <p>
-                {
-                  "Je m'engage à rester constamment à l'avant-garde des avancées technologiques en suivant régulièrement des formations, en découvrant de nouveaux outils et en me tenant informé des derniers langages de programmation. Cette approche proactive me permet de proposer des solutions innovantes et parfaitement adaptées aux besoins uniques de chaque client."
-                }
-              </p>
-            </div>
-          </section>
-        </div>
+        <About />
       </section>
 
       <hr className="border-0 h-1 bg-gradient-to-r from-pink-light to-purple-light mx-28" />
